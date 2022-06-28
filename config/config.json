@@ -1,0 +1,55 @@
+{
+    "clientPub": {
+        "clientId": "cg_opcua_publisher",
+        "serverAddress": "tcp://test.mosquitto.org:1883",
+        "qos": 1,
+        "connectionTimeout": 1,
+        "writeTimeout": 1,
+        "keepAlive": 30,
+        "pingTimeout": 1,
+        "connectRetry": true,
+        "autoConnect": true,
+        "orderMaters": false,
+        "userName": "",
+        "password": "",
+        "tlsConn": false,
+        "rootCAPath": "./certs/pub/xxxxxxxx",
+        "clientKeyPath": "./certs/pub/xxxxxxxx",
+        "privateKeyPath": "./certs/pub/xxxxxxxx",
+        "insecureSkipVerify": true,
+        "translateTopic": false,
+        "publishInterval": 250,
+        "topicToPublish": "cg-opcua-publisher/signals",
+        "logs": {"debug": true, "warning": true, "error": true, "critical": true}
+    },
+    "opcUaClients":[
+        {
+            "clientId": "cg_opcua_client",
+            "serverAddress": "opc.tcp://172.24.50.10:4840",
+            "pollInterval": 120,
+            "maxAge": 2000,
+            "maxSignalsPerRead": 100,
+            "minTimeBetweenRead": 250,
+            "nodesToRead": [
+                {
+                    "name": "ControlCabPowerSupply12Ok",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ControlCabPowerSupply12Ok" 
+                },
+                {
+                    "name": "WicketGateShutdownSolEnerg",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGateShutdownSolEnerg"
+                },
+                {
+                    "name": "RunnerBladeShutdownSolEnerg",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladeShutdownSolEnerg" 
+                },
+                {
+                    "name": "Spare_ENET1_DIM1_BYTE0_BIT3",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                }
+            ]
+        }
+    ]
+
+
+}

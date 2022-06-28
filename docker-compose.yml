@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  opcua-mqtt-connector:
+    image: cadugrillo/opcua-mqtt-connector:1.0
+    container_name: opcua-mqtt-connector
+    restart: always
+    volumes:
+      - type: bind
+        source: ./config
+        target: /config
+      - type: bind
+        source: ./certs
+        target: /certs  
+    networks:
+      - cg-edge
+
+networks:
+   cg-edge:
+    external: true
