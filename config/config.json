@@ -20,32 +20,58 @@
         "translateTopic": false,
         "publishInterval": 250,
         "topicToPublish": "cg-opcua-publisher/signals",
-        "logs": {"debug": true, "warning": true, "error": true, "critical": true}
+        "logs": {"debug": false, "warning": true, "error": true, "critical": true}
     },
     "opcUaClients":[
         {
-            "clientId": "cg_opcua_client",
+            "clientId": "cg_opcua_client1",
             "serverAddress": "opc.tcp://172.24.50.10:4840",
-            "pollInterval": 120,
+            "pollInterval": 10,
             "maxAge": 2000,
             "maxSignalsPerRead": 100,
             "minTimeBetweenRead": 250,
             "nodesToRead": [
                 {
-                    "name": "ControlCabPowerSupply12Ok",
+                    "name": "c1_ControlCabPowerSupply12Ok",
                     "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ControlCabPowerSupply12Ok" 
                 },
                 {
-                    "name": "WicketGateShutdownSolEnerg",
+                    "name": "c1_WicketGateShutdownSolEnerg",
                     "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGateShutdownSolEnerg"
                 },
                 {
-                    "name": "RunnerBladeShutdownSolEnerg",
+                    "name": "c1_RunnerBladeShutdownSolEnerg",
                     "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladeShutdownSolEnerg" 
                 },
                 {
-                    "name": "Spare_ENET1_DIM1_BYTE0_BIT3",
+                    "name": "c1_Spare_ENET1_DIM1_BYTE0_BIT3",
                     "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                }
+            ]
+        },
+        {
+            "clientId": "cg_opcua_client2",
+            "serverAddress": "opc.tcp://172.24.50.11:4840",
+            "pollInterval": 10,
+            "maxAge": 2000,
+            "maxSignalsPerRead": 100,
+            "minTimeBetweenRead": 250,
+            "nodesToRead": [
+                {
+                    "name": "c2_ControlCabPowerSupply12Ok",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.ControlCabPowerSupply12Ok" 
+                },
+                {
+                    "name": "c2_WicketGateShutdownSolEnerg",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.WicketGateShutdownSolEnerg"
+                },
+                {
+                    "name": "c2_RunnerBladeShutdownSolEnerg",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.RunnerBladeShutdownSolEnerg" 
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM1_BYTE0_BIT3",
+                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
                 }
             ]
         }
