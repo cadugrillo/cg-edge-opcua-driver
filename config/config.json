@@ -26,52 +26,3462 @@
         {
             "clientId": "cg_opcua_client1",
             "serverAddress": "opc.tcp://172.24.50.10:4840",
-            "pollInterval": 10,
+            "pollInterval": 1,
             "maxAge": 2000,
             "maxSignalsPerRead": 100,
-            "minTimeBetweenRead": 250,
+            "minTimeBetweenRead": 100,
             "nodesToRead": [
-                {
-                    "name": "c1_ControlCabPowerSupply12Ok",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ControlCabPowerSupply12Ok" 
+                { 
+                    "name": "c1_ControlCabPowerSupply12Ok"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ControlCabPowerSupply12Ok"
                 },
                 {
-                    "name": "c1_WicketGateShutdownSolEnerg",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGateShutdownSolEnerg"
+                    "name": "c1_WicketGateShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGateShutdownSolEnerg"
                 },
                 {
-                    "name": "c1_RunnerBladeShutdownSolEnerg",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladeShutdownSolEnerg" 
+                    "name": "c1_RunnerBladeShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladeShutdownSolEnerg"
                 },
                 {
-                    "name": "c1_Spare_ENET1_DIM1_BYTE0_BIT3",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                    "name": "c1_Spare_ENET1_DIM1_BYTE0_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                },
+                {
+                    "name": "c1_Spare_ENET1_DIM1_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT4"
+                },
+                {
+                    "name": "c1_Spare_ENET1_DIM1_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT5"
+                },
+                {
+                    "name": "c1_BatteryChargerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BatteryChargerFailure"
+                },
+                {
+                    "name": "c1_StationServiceBreakerOpen"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationServiceBreakerOpen"
+                },
+                {
+                    "name": "c1_Spare_ENET1_DIM1_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE1_BIT0"
+                },
+                {
+                    "name": "c1_StationPhaseLossUnderV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationPhaseLossUnderV"
+                },
+                {
+                    "name": "c1_GeneratorBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GeneratorBreakerClosed"
+                },
+                {
+                    "name": "c1_UnitSyncSpeedRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncSpeedRaise"
+                },
+                {
+                    "name": "c1_UnitSyncSpeedLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncSpeedLower"
+                },
+                {
+                    "name": "c1_UnitSyncVoltageRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncVoltageRaise"
+                },
+                {
+                    "name": "c1_UnitSyncVoltageLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncVoltageLower"
+                },
+                {
+                    "name": "c1_PLCLeadSelection"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCLeadSelection"
+                },
+                {
+                    "name": "c1_LineGroundFault51N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineGroundFault51N"
+                },
+                {
+                    "name": "c1_LineOvercurrentFault5051"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineOvercurrentFault5051"
+                },
+                {
+                    "name": "c1_MainTransfDiff87T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfDiff87T"
+                },
+                {
+                    "name": "c1_MainBusUnderOverVoltPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhA"
+                },
+                {
+                    "name": "c1_MainBusUnderOverVoltPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhB"
+                },
+                {
+                    "name": "c1_MainBusUnderOverVoltPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhC"
+                },
+                {
+                    "name": "c1_GenProtReversePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtReversePower"
+                },
+                {
+                    "name": "c1_GenTransfUndercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenTransfUndercurrent"
+                },
+                {
+                    "name": "c1_GenProtLossExcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtLossExcitation"
+                },
+                {
+                    "name": "c1_GenProtNeutralGroundOvervolt"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtNeutralGroundOvervolt"
+                },
+                {
+                    "name": "c1_GenProtNegSeqOvercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtNegSeqOvercurrent"
+                },
+                {
+                    "name": "c1_GenProtDifferential"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtDifferential"
+                },
+                {
+                    "name": "c1_GenProtVoltCtrlTimeOvercPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhA"
+                },
+                {
+                    "name": "c1_GenProtVoltCtrlTimeOvercPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhB"
+                },
+                {
+                    "name": "c1_GenProtVoltCtrlTimeOvercPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhC"
+                },
+                {
+                    "name": "c1_MainBusOverUnderFreq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusOverUnderFreq"
+                },
+                {
+                    "name": "c1_GatePosGreatThanSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosGreatThanSNL"
+                },
+                {
+                    "name": "c1_Spare_ENET1_DIM3_BYTE0_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT1"
+                },
+                {
+                    "name": "c1_GatePosClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosClosed"
+                },
+                {
+                    "name": "c1_GatePosRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosRaise"
+                },
+                {
+                    "name": "c1_GatePosLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosLower"
+                },
+                {
+                    "name": "c1_Spare_ENET1_DIM3_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT5"
+                },
+                {
+                    "name": "c1_StopCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StopCommand"
+                },
+                {
+                    "name": "c1_StartCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StartCommand"
+                },
+                {
+                    "name": "c1_CtrlMode43CSManual"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CSManual"
+                },
+                {
+                    "name": "c1_CtrlMode43CS1LocalAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CS1LocalAuto"
+                },
+                {
+                    "name": "c1_CtrlMode43CS1RemoteAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CS1RemoteAuto"
+                },
+                {
+                    "name": "c1_GovMode43LCSLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GovMode43LCSLevel"
+                },
+                {
+                    "name": "c1_GovMode43LCSFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GovMode43LCSFlow"
+                },
+                {
+                    "name": "c1_AllMFSinAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AllMFSinAuto"
+                },
+                {
+                    "name": "c1_PLCWatchDog"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCWatchDog"
+                },
+                {
+                    "name": "c1_ExcSystOverexcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystOverexcitation"
+                },
+                {
+                    "name": "c1_NonLockoutRelay94"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.NonLockoutRelay94"
+                },
+                {
+                    "name": "c1_LockoutRelay86E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86E"
+                },
+                {
+                    "name": "c1_LockoutRelay86N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86N"
+                },
+                {
+                    "name": "c1_LockoutRelay86T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86T"
+                },
+                {
+                    "name": "c1_LockoutRelay86H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86H"
+                },
+                {
+                    "name": "c1_StationDCOvervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationDCOvervoltage"
+                },
+                {
+                    "name": "c1_StationDCUndervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationDCUndervoltage"
+                },
+                {
+                    "name": "c1_LineBreakerPowerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineBreakerPowerFailure"
+                },
+                {
+                    "name": "c1_UnitSpeedGreatThanShaftCreep"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanShaftCreep"
+                },
+                {
+                    "name": "c1_UnitSpeedGreatThanOverSpeed2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanOverSpeed2"
+                },
+                {
+                    "name": "c1_UnitSpeedLessThan10pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedLessThan10pcSNL"
+                },
+                {
+                    "name": "c1_UnitSpeedGreatThan90pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThan90pcSNL"
+                },
+                {
+                    "name": "c1_UnitSpeedGreatThanOverSpeed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanOverSpeed"
+                },
+                {
+                    "name": "c1_LineBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineBreakerClosed"
+                },
+                {
+                    "name": "c1_ExcSystFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystFault"
+                },
+                {
+                    "name": "c1_NormalStopButton"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.NormalStopButton"
+                },
+                {
+                    "name": "c1_MaintenanceSwitch"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MaintenanceSwitch"
+                },
+                {
+                    "name": "c1_GenVibrationHorizontal"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVibrationHorizontal"
+                },
+                {
+                    "name": "c1_ExcSystGroundFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystGroundFault"
+                },
+                {
+                    "name": "c1_TurbVibrationNormalStop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbVibrationNormalStop"
+                },
+                {
+                    "name": "c1_TurbVibrationAlarm"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbVibrationAlarm"
+                },
+                {
+                    "name": "c1_UnitMWhPulse"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitMWhPulse"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM5_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM5_BYTE0_BIT5"
+                },
+                {
+                    "name": "c1_TurbBearSealWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbBearSealWaterFlowLow"
+                },
+                {
+                    "name": "c1_TurbGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBearTempHigh"
+                },
+                {
+                    "name": "c1_PackBoxCoolWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PackBoxCoolWaterFlowLow"
+                },
+                {
+                    "name": "c1_GenCoupEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c1_GenLubeOilFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenLubeOilFlowLow"
+                },
+                {
+                    "name": "c1_ThrustBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ThrustBearTempHigh"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM5_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM5_BYTE1_BIT4"
+                },
+                {
+                    "name": "c1_GenOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOilLevelLow"
+                },
+                {
+                    "name": "c1_GenOilLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOilLevelHigh"
+                },
+                {
+                    "name": "c1_LubeOilTankTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LubeOilTankTempHigh"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM6_BYTE0_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE0_BIT0"
+                },
+                {
+                    "name": "c1_GenOutbEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutbEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c1_ShaftLocked"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ShaftLocked"
+                },
+                {
+                    "name": "c1_MainTransfSuddenPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfSuddenPressure"
+                },
+                {
+                    "name": "c1_MainTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfTempHigh"
+                },
+                {
+                    "name": "c1_MainTransfOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfOilLevelLow"
+                },
+                {
+                    "name": "c1_StatServiceTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StatServiceTransfTempHigh"
+                },
+                {
+                    "name": "c1_HPUOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilLevelLow"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM6_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT0"
+                },
+                {
+                    "name": "c1_HPUOilPressureLowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilPressureLowLow"
+                },
+                {
+                    "name": "c1_HPUOilPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilPressureLow"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM6_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT3"
+                },
+                {
+                    "name": "c1_BrakesOn"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BrakesOn"
+                },
+                {
+                    "name": "c1_CoolWaterSystPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystPressureLow"
+                },
+                {
+                    "name": "c1_Fire"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Fire"
+                },
+                {
+                    "name": "c1_Intrusion"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Intrusion"
+                },
+                {
+                    "name": "c1_PlantSumpWaterLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PlantSumpWaterLevelHigh"
+                },
+                {
+                    "name": "c1_ExcSystReady"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystReady"
+                },
+                {
+                    "name": "c1_MPTOilTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MPTOilTempHigh"
+                },
+                {
+                    "name": "c1_CoolWaterSystPumpFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystPumpFailure"
+                },
+                {
+                    "name": "c1_CoolWaterSystDiffPressureHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystDiffPressureHigh"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM7_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM7_BYTE0_BIT5"
+                },
+                {
+                    "name": "c1_VoltageImbalance"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VoltageImbalance"
+                },
+                {
+                    "name": "c1_GNDFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GNDFault"
+                },
+                {
+                    "name": "c1_BatteryDisconnectPosition"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BatteryDisconnectPosition"
+                },
+                {
+                    "name": "c1_B52G2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.B52G2"
+                },
+                {
+                    "name": "c1_OtherPlantRunning"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OtherPlantRunning"
+                },
+                {
+                    "name": "c1_ManualTransferSwitchEmerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ManualTransferSwitchEmerg"
+                },
+                {
+                    "name": "c1_Unit1Estop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Unit1Estop"
+                },
+                {
+                    "name": "c1_LubeOilLowPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LubeOilLowPressure"
+                },
+                {
+                    "name": "c1_GenBearOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenBearOilLevelLow"
+                },
+                {
+                    "name": "c1_LossLeadLubeOilPump"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LossLeadLubeOilPump"
+                },
+                {
+                    "name": "c1_ExcSystIncompleteSeq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystIncompleteSeq"
+                },
+                {
+                    "name": "c1_BrakeFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BrakeFailure"
+                },
+                {
+                    "name": "c1_HPUStartPermissive"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUStartPermissive"
+                },
+                {
+                    "name": "c1_B52E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.B52E"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT4"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT5"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE0_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT6"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE0_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT7"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT0"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT1"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT2"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT3"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT4"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT5"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT6"
+                },
+                {
+                    "name": "c1_Spare_ENET2_DIM8_BYTE1_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT7"
+                },
+                {
+                    "name": "c1_GenVoltageV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV"
+                },
+                {
+                    "name": "c1_GenCurrentA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA"
+                },
+                {
+                    "name": "c1_GenActivePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower"
+                },
+                {
+                    "name": "c1_GenReactPower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower"
+                },
+                {
+                    "name": "c1_VtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB"
+                },
+                {
+                    "name": "c1_AtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB"
+                },
+                {
+                    "name": "c1_UpperPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel"
+                },
+                {
+                    "name": "c1_LowerPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel"
+                },
+                {
+                    "name": "c1_WicketGatePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos"
+                },
+                {
+                    "name": "c1_RunnerBladePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos"
+                },
+                {
+                    "name": "c1_SpeedSignal1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1"
+                },
+                {
+                    "name": "c1_SpeedSignal2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2"
+                },
+                {
+                    "name": "c1_TrashRackWaterLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel"
+                },
+                {
+                    "name": "c1_Spare_ENET2_AIM2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_AIM2_WORD5"
+                },
+                {
+                    "name": "c1_UnitFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow"
+                },
+                {
+                    "name": "c1_HpuPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure"
+                },
+                {
+                    "name": "c1_GenStatWindTemp1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1"
+                },
+                {
+                    "name": "c1_GenStatWindTemp2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2"
+                },
+                {
+                    "name": "c1_GenStatWindTemp3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3"
+                },
+                {
+                    "name": "c1_GenStatWindTemp4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4"
+                },
+                {
+                    "name": "c1_GenStatWindTemp5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5"
+                },
+                {
+                    "name": "c1_GenStatWindTemp6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6"
+                },
+                {
+                    "name": "c1_TurbOilHeadTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp"
+                },
+                {
+                    "name": "c1_TurbGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp"
+                },
+                {
+                    "name": "c1_TurbPackBoxTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp"
+                },
+                {
+                    "name": "c1_GenCoupEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp"
+                },
+                {
+                    "name": "c1_GenOutEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp"
+                },
+                {
+                    "name": "c1_OutThrustBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp"
+                },
+                {
+                    "name": "c1_Spare_ENET2_RTD2_WORD4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD4"
+                },
+                {
+                    "name": "c1_Spare_ENET2_RTD2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD5"
+                },
+                {
+                    "name": "c1_Spare_ENET2_RTD2_WORD6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD6"
+                },
+                {
+                    "name": "c1_Spare_ENET2_RTD2_WORD7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD7"
+                },
+                {
+                    "name": "c1_GenVoltageV_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_Alm1"
+                },
+                {
+                    "name": "c1_GenVoltageV_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_Alm2"
+                },
+                {
+                    "name": "c1_GenVoltageV_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_WireB"
+                },
+                {
+                    "name": "c1_GenCurrentA_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_Alm1"
+                },
+                {
+                    "name": "c1_GenCurrentA_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_Alm2"
+                },
+                {
+                    "name": "c1_GenCurrentA_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_WireB"
+                },
+                {
+                    "name": "c1_GenActivePower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_Alm1"
+                },
+                {
+                    "name": "c1_GenActivePower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_Alm2"
+                },
+                {
+                    "name": "c1_GenActivePower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_WireB"
+                },
+                {
+                    "name": "c1_GenReactPower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_Alm1"
+                },
+                {
+                    "name": "c1_GenReactPower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_Alm2"
+                },
+                {
+                    "name": "c1_GenReactPower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_WireB"
+                },
+                {
+                    "name": "c1_VtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_Alm1"
+                },
+                {
+                    "name": "c1_VtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_Alm2"
+                },
+                {
+                    "name": "c1_VtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_WireB"
+                },
+                {
+                    "name": "c1_AtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_Alm1"
+                },
+                {
+                    "name": "c1_AtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_Alm2"
+                },
+                {
+                    "name": "c1_AtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_WireB"
+                },
+                {
+                    "name": "c1_UpperPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_Alm1"
+                },
+                {
+                    "name": "c1_UpperPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_Alm2"
+                },
+                {
+                    "name": "c1_UpperPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_WireB"
+                },
+                {
+                    "name": "c1_LowerPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_Alm1"
+                },
+                {
+                    "name": "c1_LowerPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_Alm2"
+                },
+                {
+                    "name": "c1_LowerPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_WireB"
+                },
+                {
+                    "name": "c1_WicketGatePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_Alm1"
+                },
+                {
+                    "name": "c1_WicketGatePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_Alm2"
+                },
+                {
+                    "name": "c1_WicketGatePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_WireB"
+                },
+                {
+                    "name": "c1_RunnerBladePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_Alm1"
+                },
+                {
+                    "name": "c1_RunnerBladePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_Alm2"
+                },
+                {
+                    "name": "c1_RunnerBladePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_WireB"
+                },
+                {
+                    "name": "c1_SpeedSignal1_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_Alm1"
+                },
+                {
+                    "name": "c1_SpeedSignal1_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_Alm2"
+                },
+                {
+                    "name": "c1_SpeedSignal1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_WireB"
+                },
+                {
+                    "name": "c1_SpeedSignal2_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_Alm1"
+                },
+                {
+                    "name": "c1_SpeedSignal2_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_Alm2"
+                },
+                {
+                    "name": "c1_SpeedSignal2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_WireB"
+                },
+                {
+                    "name": "c1_TrashRackWaterLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_Alm1"
+                },
+                {
+                    "name": "c1_TrashRackWaterLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_Alm2"
+                },
+                {
+                    "name": "c1_TrashRackWaterLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_WireB"
+                },
+                {
+                    "name": "c1_UnitFlow_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_Alm1"
+                },
+                {
+                    "name": "c1_UnitFlow_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_Alm2"
+                },
+                {
+                    "name": "c1_UnitFlow_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_WireB"
+                },
+                {
+                    "name": "c1_HpuPressure_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_Alm1"
+                },
+                {
+                    "name": "c1_HpuPressure_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_Alm2"
+                },
+                {
+                    "name": "c1_HpuPressure_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_WireB"
+                },
+                {
+                    "name": "c1_TurbOilHeadTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_H"
+                },
+                {
+                    "name": "c1_TurbOilHeadTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_HH"
+                },
+                {
+                    "name": "c1_TurbOilHeadTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_WireB"
+                },
+                {
+                    "name": "c1_TurbGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_H"
+                },
+                {
+                    "name": "c1_TurbGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c1_TurbGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c1_TurbPackBoxTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_H"
+                },
+                {
+                    "name": "c1_TurbPackBoxTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_HH"
+                },
+                {
+                    "name": "c1_TurbPackBoxTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_WireB"
+                },
+                {
+                    "name": "c1_GenCoupEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c1_GenCoupEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c1_GenCoupEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c1_GenOutEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c1_GenOutEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c1_GenOutEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c1_OutThrustBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_H"
+                },
+                {
+                    "name": "c1_OutThrustBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_HH"
+                },
+                {
+                    "name": "c1_OutThrustBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp1_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp1_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp2_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp2_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp3_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp3_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp3_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp4_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp4_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp4_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp5_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp5_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp5_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_WireB"
+                },
+                {
+                    "name": "c1_GenStatWindTemp6_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_H"
+                },
+                {
+                    "name": "c1_GenStatWindTemp6_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_HH"
+                },
+                {
+                    "name": "c1_GenStatWindTemp6_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_WireB"
+                },
+                {
+                    "name": "c1_Differential_Level_LimAlm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Differential_Level_LimAlm1"
+                },
+                {
+                    "name": "c1_Differential_Level_LimAlm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Differential_Level_LimAlm2"
+                },
+                {
+                    "name": "c1_EnabledUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.EnabledUnit"
+                },
+                {
+                    "name": "c1_CurrentLeadUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrentLeadUnit"
+                },
+                {
+                    "name": "c1_PLCWatchDogCircuitMalfunction"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCWatchDogCircuitMalfunction"
+                },
+                {
+                    "name": "c1_ExcON"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcON"
+                },
+                {
+                    "name": "c1_ExcOff"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcOff"
+                },
+                {
+                    "name": "c1_DownTimeDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeDays"
+                },
+                {
+                    "name": "c1_DownTimeHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeHours"
+                },
+                {
+                    "name": "c1_DownTimeSinceTripDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeSinceTripDays"
+                },
+                {
+                    "name": "c1_DownTimeSinceTripHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeSinceTripHours"
+                },
+                {
+                    "name": "c1_TotalMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TotalMWh"
+                },
+                {
+                    "name": "c1_PrevYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevYearMWh"
+                },
+                {
+                    "name": "c1_CurrYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrYearMWh"
+                },
+                {
+                    "name": "c1_PrevMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevMonthMWh"
+                },
+                {
+                    "name": "c1_CurrMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrMonthMWh"
+                },
+                {
+                    "name": "c1_PrevDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevDayMWh"
+                },
+                {
+                    "name": "c1_CurrDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrDayMWh"
+                },
+                {
+                    "name": "c1_PowerFactor"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PowerFactor"
+                },
+                {
+                    "name": "c1_UnitStatus"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitStatus"
+                },
+                {
+                    "name": "c1_Step1Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step1Status"
+                },
+                {
+                    "name": "c1_Step2Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step2Status"
+                },
+                {
+                    "name": "c1_Step3Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step3Status"
+                },
+                {
+                    "name": "c1_Step4Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step4Status"
+                },
+                {
+                    "name": "c1_Step5Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step5Status"
+                },
+                {
+                    "name": "c1_Step6Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step6Status"
+                },
+                {
+                    "name": "c1_Step7Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step7Status"
+                },
+                {
+                    "name": "c1_Step8Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step8Status"
+                },
+                {
+                    "name": "c1_Step9Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step9Status"
+                },
+                {
+                    "name": "c1_Step10Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step10Status"
+                },
+                {
+                    "name": "c1_Step11Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step11Status"
+                },
+                {
+                    "name": "c1_Step12Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step12Status"
+                },
+                {
+                    "name": "c1_Step13Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step13Status"
+                },
+                {
+                    "name": "c1_Step14Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step14Status"
+                },
+                {
+                    "name": "c1_Step20Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step20Status"
+                },
+                {
+                    "name": "c1_Step21Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step21Status"
+                },
+                {
+                    "name": "c1_Step22Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step22Status"
+                },
+                {
+                    "name": "c1_Step23Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step23Status"
+                },
+                {
+                    "name": "c1_Step24Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step24Status"
+                },
+                {
+                    "name": "c1_Step25Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step25Status"
+                },
+                {
+                    "name": "c1_Step26Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step26Status"
+                },
+                {
+                    "name": "c1_Step27Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step27Status"
+                },
+                {
+                    "name": "c1_Step28Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step28Status"
+                },
+                {
+                    "name": "c1_HWDiffProtDisabled"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HWDiffProtDisabled"
                 }
             ]
         },
         {
             "clientId": "cg_opcua_client2",
             "serverAddress": "opc.tcp://172.24.50.11:4840",
-            "pollInterval": 10,
+            "pollInterval": 1,
             "maxAge": 2000,
             "maxSignalsPerRead": 100,
-            "minTimeBetweenRead": 250,
+            "minTimeBetweenRead": 100,
             "nodesToRead": [
-                {
-                    "name": "c2_ControlCabPowerSupply12Ok",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.ControlCabPowerSupply12Ok" 
+                { 
+                    "name": "c2_ControlCabPowerSupply12Ok"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ControlCabPowerSupply12Ok"
                 },
                 {
-                    "name": "c2_WicketGateShutdownSolEnerg",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.WicketGateShutdownSolEnerg"
+                    "name": "c2_WicketGateShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGateShutdownSolEnerg"
                 },
                 {
-                    "name": "c2_RunnerBladeShutdownSolEnerg",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.RunnerBladeShutdownSolEnerg" 
+                    "name": "c2_RunnerBladeShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladeShutdownSolEnerg"
                 },
                 {
-                    "name": "c2_Spare_ENET1_DIM1_BYTE0_BIT3",
-                    "nodeID": "ns=4;s=|var|CODESYS Control for Raspberry Pi SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                    "name": "c2_Spare_ENET1_DIM1_BYTE0_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM1_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT4"
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM1_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT5"
+                },
+                {
+                    "name": "c2_BatteryChargerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BatteryChargerFailure"
+                },
+                {
+                    "name": "c2_StationServiceBreakerOpen"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationServiceBreakerOpen"
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM1_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM1_BYTE1_BIT0"
+                },
+                {
+                    "name": "c2_StationPhaseLossUnderV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationPhaseLossUnderV"
+                },
+                {
+                    "name": "c2_GeneratorBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GeneratorBreakerClosed"
+                },
+                {
+                    "name": "c2_UnitSyncSpeedRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncSpeedRaise"
+                },
+                {
+                    "name": "c2_UnitSyncSpeedLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncSpeedLower"
+                },
+                {
+                    "name": "c2_UnitSyncVoltageRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncVoltageRaise"
+                },
+                {
+                    "name": "c2_UnitSyncVoltageLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSyncVoltageLower"
+                },
+                {
+                    "name": "c2_PLCLeadSelection"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCLeadSelection"
+                },
+                {
+                    "name": "c2_LineGroundFault51N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineGroundFault51N"
+                },
+                {
+                    "name": "c2_LineOvercurrentFault5051"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineOvercurrentFault5051"
+                },
+                {
+                    "name": "c2_MainTransfDiff87T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfDiff87T"
+                },
+                {
+                    "name": "c2_MainBusUnderOverVoltPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhA"
+                },
+                {
+                    "name": "c2_MainBusUnderOverVoltPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhB"
+                },
+                {
+                    "name": "c2_MainBusUnderOverVoltPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusUnderOverVoltPhC"
+                },
+                {
+                    "name": "c2_GenProtReversePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtReversePower"
+                },
+                {
+                    "name": "c2_GenTransfUndercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenTransfUndercurrent"
+                },
+                {
+                    "name": "c2_GenProtLossExcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtLossExcitation"
+                },
+                {
+                    "name": "c2_GenProtNeutralGroundOvervolt"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtNeutralGroundOvervolt"
+                },
+                {
+                    "name": "c2_GenProtNegSeqOvercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtNegSeqOvercurrent"
+                },
+                {
+                    "name": "c2_GenProtDifferential"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtDifferential"
+                },
+                {
+                    "name": "c2_GenProtVoltCtrlTimeOvercPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhA"
+                },
+                {
+                    "name": "c2_GenProtVoltCtrlTimeOvercPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhB"
+                },
+                {
+                    "name": "c2_GenProtVoltCtrlTimeOvercPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenProtVoltCtrlTimeOvercPhC"
+                },
+                {
+                    "name": "c2_MainBusOverUnderFreq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainBusOverUnderFreq"
+                },
+                {
+                    "name": "c2_GatePosGreatThanSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosGreatThanSNL"
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM3_BYTE0_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT1"
+                },
+                {
+                    "name": "c2_GatePosClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosClosed"
+                },
+                {
+                    "name": "c2_GatePosRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosRaise"
+                },
+                {
+                    "name": "c2_GatePosLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GatePosLower"
+                },
+                {
+                    "name": "c2_Spare_ENET1_DIM3_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT5"
+                },
+                {
+                    "name": "c2_StopCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StopCommand"
+                },
+                {
+                    "name": "c2_StartCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StartCommand"
+                },
+                {
+                    "name": "c2_CtrlMode43CSManual"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CSManual"
+                },
+                {
+                    "name": "c2_CtrlMode43CS1LocalAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CS1LocalAuto"
+                },
+                {
+                    "name": "c2_CtrlMode43CS1RemoteAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CtrlMode43CS1RemoteAuto"
+                },
+                {
+                    "name": "c2_GovMode43LCSLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GovMode43LCSLevel"
+                },
+                {
+                    "name": "c2_GovMode43LCSFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GovMode43LCSFlow"
+                },
+                {
+                    "name": "c2_AllMFSinAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AllMFSinAuto"
+                },
+                {
+                    "name": "c2_PLCWatchDog"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCWatchDog"
+                },
+                {
+                    "name": "c2_ExcSystOverexcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystOverexcitation"
+                },
+                {
+                    "name": "c2_NonLockoutRelay94"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.NonLockoutRelay94"
+                },
+                {
+                    "name": "c2_LockoutRelay86E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86E"
+                },
+                {
+                    "name": "c2_LockoutRelay86N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86N"
+                },
+                {
+                    "name": "c2_LockoutRelay86T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86T"
+                },
+                {
+                    "name": "c2_LockoutRelay86H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LockoutRelay86H"
+                },
+                {
+                    "name": "c2_StationDCOvervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationDCOvervoltage"
+                },
+                {
+                    "name": "c2_StationDCUndervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StationDCUndervoltage"
+                },
+                {
+                    "name": "c2_LineBreakerPowerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineBreakerPowerFailure"
+                },
+                {
+                    "name": "c2_UnitSpeedGreatThanShaftCreep"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanShaftCreep"
+                },
+                {
+                    "name": "c2_UnitSpeedGreatThanOverSpeed2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanOverSpeed2"
+                },
+                {
+                    "name": "c2_UnitSpeedLessThan10pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedLessThan10pcSNL"
+                },
+                {
+                    "name": "c2_UnitSpeedGreatThan90pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThan90pcSNL"
+                },
+                {
+                    "name": "c2_UnitSpeedGreatThanOverSpeed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitSpeedGreatThanOverSpeed"
+                },
+                {
+                    "name": "c2_LineBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LineBreakerClosed"
+                },
+                {
+                    "name": "c2_ExcSystFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystFault"
+                },
+                {
+                    "name": "c2_NormalStopButton"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.NormalStopButton"
+                },
+                {
+                    "name": "c2_MaintenanceSwitch"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MaintenanceSwitch"
+                },
+                {
+                    "name": "c2_GenVibrationHorizontal"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVibrationHorizontal"
+                },
+                {
+                    "name": "c2_ExcSystGroundFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystGroundFault"
+                },
+                {
+                    "name": "c2_TurbVibrationNormalStop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbVibrationNormalStop"
+                },
+                {
+                    "name": "c2_TurbVibrationAlarm"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbVibrationAlarm"
+                },
+                {
+                    "name": "c2_UnitMWhPulse"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitMWhPulse"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM5_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM5_BYTE0_BIT5"
+                },
+                {
+                    "name": "c2_TurbBearSealWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbBearSealWaterFlowLow"
+                },
+                {
+                    "name": "c2_TurbGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBearTempHigh"
+                },
+                {
+                    "name": "c2_PackBoxCoolWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PackBoxCoolWaterFlowLow"
+                },
+                {
+                    "name": "c2_GenCoupEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c2_GenLubeOilFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenLubeOilFlowLow"
+                },
+                {
+                    "name": "c2_ThrustBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ThrustBearTempHigh"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM5_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM5_BYTE1_BIT4"
+                },
+                {
+                    "name": "c2_GenOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOilLevelLow"
+                },
+                {
+                    "name": "c2_GenOilLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOilLevelHigh"
+                },
+                {
+                    "name": "c2_LubeOilTankTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LubeOilTankTempHigh"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM6_BYTE0_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE0_BIT0"
+                },
+                {
+                    "name": "c2_GenOutbEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutbEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c2_ShaftLocked"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ShaftLocked"
+                },
+                {
+                    "name": "c2_MainTransfSuddenPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfSuddenPressure"
+                },
+                {
+                    "name": "c2_MainTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfTempHigh"
+                },
+                {
+                    "name": "c2_MainTransfOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MainTransfOilLevelLow"
+                },
+                {
+                    "name": "c2_StatServiceTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.StatServiceTransfTempHigh"
+                },
+                {
+                    "name": "c2_HPUOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilLevelLow"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM6_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT0"
+                },
+                {
+                    "name": "c2_HPUOilPressureLowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilPressureLowLow"
+                },
+                {
+                    "name": "c2_HPUOilPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUOilPressureLow"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM6_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT3"
+                },
+                {
+                    "name": "c2_BrakesOn"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BrakesOn"
+                },
+                {
+                    "name": "c2_CoolWaterSystPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystPressureLow"
+                },
+                {
+                    "name": "c2_Fire"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Fire"
+                },
+                {
+                    "name": "c2_Intrusion"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Intrusion"
+                },
+                {
+                    "name": "c2_PlantSumpWaterLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PlantSumpWaterLevelHigh"
+                },
+                {
+                    "name": "c2_ExcSystReady"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystReady"
+                },
+                {
+                    "name": "c2_MPTOilTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.MPTOilTempHigh"
+                },
+                {
+                    "name": "c2_CoolWaterSystPumpFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystPumpFailure"
+                },
+                {
+                    "name": "c2_CoolWaterSystDiffPressureHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CoolWaterSystDiffPressureHigh"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM7_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM7_BYTE0_BIT5"
+                },
+                {
+                    "name": "c2_VoltageImbalance"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VoltageImbalance"
+                },
+                {
+                    "name": "c2_GNDFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GNDFault"
+                },
+                {
+                    "name": "c2_BatteryDisconnectPosition"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BatteryDisconnectPosition"
+                },
+                {
+                    "name": "c2_B52G2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.B52G2"
+                },
+                {
+                    "name": "c2_OtherPlantRunning"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OtherPlantRunning"
+                },
+                {
+                    "name": "c2_ManualTransferSwitchEmerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ManualTransferSwitchEmerg"
+                },
+                {
+                    "name": "c2_Unit1Estop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Unit1Estop"
+                },
+                {
+                    "name": "c2_LubeOilLowPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LubeOilLowPressure"
+                },
+                {
+                    "name": "c2_GenBearOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenBearOilLevelLow"
+                },
+                {
+                    "name": "c2_LossLeadLubeOilPump"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LossLeadLubeOilPump"
+                },
+                {
+                    "name": "c2_ExcSystIncompleteSeq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcSystIncompleteSeq"
+                },
+                {
+                    "name": "c2_BrakeFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.BrakeFailure"
+                },
+                {
+                    "name": "c2_HPUStartPermissive"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HPUStartPermissive"
+                },
+                {
+                    "name": "c2_B52E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.B52E"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT4"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT5"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE0_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT6"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE0_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT7"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT0"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT1"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT2"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT3"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT4"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT5"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT6"
+                },
+                {
+                    "name": "c2_Spare_ENET2_DIM8_BYTE1_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT7"
+                },
+                {
+                    "name": "c2_GenVoltageV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV"
+                },
+                {
+                    "name": "c2_GenCurrentA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA"
+                },
+                {
+                    "name": "c2_GenActivePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower"
+                },
+                {
+                    "name": "c2_GenReactPower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower"
+                },
+                {
+                    "name": "c2_VtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB"
+                },
+                {
+                    "name": "c2_AtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB"
+                },
+                {
+                    "name": "c2_UpperPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel"
+                },
+                {
+                    "name": "c2_LowerPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel"
+                },
+                {
+                    "name": "c2_WicketGatePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos"
+                },
+                {
+                    "name": "c2_RunnerBladePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos"
+                },
+                {
+                    "name": "c2_SpeedSignal1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1"
+                },
+                {
+                    "name": "c2_SpeedSignal2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2"
+                },
+                {
+                    "name": "c2_TrashRackWaterLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel"
+                },
+                {
+                    "name": "c2_Spare_ENET2_AIM2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_AIM2_WORD5"
+                },
+                {
+                    "name": "c2_UnitFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow"
+                },
+                {
+                    "name": "c2_HpuPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure"
+                },
+                {
+                    "name": "c2_GenStatWindTemp1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1"
+                },
+                {
+                    "name": "c2_GenStatWindTemp2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2"
+                },
+                {
+                    "name": "c2_GenStatWindTemp3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3"
+                },
+                {
+                    "name": "c2_GenStatWindTemp4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4"
+                },
+                {
+                    "name": "c2_GenStatWindTemp5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5"
+                },
+                {
+                    "name": "c2_GenStatWindTemp6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6"
+                },
+                {
+                    "name": "c2_TurbOilHeadTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp"
+                },
+                {
+                    "name": "c2_TurbGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp"
+                },
+                {
+                    "name": "c2_TurbPackBoxTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp"
+                },
+                {
+                    "name": "c2_GenCoupEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp"
+                },
+                {
+                    "name": "c2_GenOutEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp"
+                },
+                {
+                    "name": "c2_OutThrustBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp"
+                },
+                {
+                    "name": "c2_Spare_ENET2_RTD2_WORD4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD4"
+                },
+                {
+                    "name": "c2_Spare_ENET2_RTD2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD5"
+                },
+                {
+                    "name": "c2_Spare_ENET2_RTD2_WORD6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD6"
+                },
+                {
+                    "name": "c2_Spare_ENET2_RTD2_WORD7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Spare_ENET2_RTD2_WORD7"
+                },
+                {
+                    "name": "c2_GenVoltageV_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_Alm1"
+                },
+                {
+                    "name": "c2_GenVoltageV_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_Alm2"
+                },
+                {
+                    "name": "c2_GenVoltageV_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenVoltageV_WireB"
+                },
+                {
+                    "name": "c2_GenCurrentA_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_Alm1"
+                },
+                {
+                    "name": "c2_GenCurrentA_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_Alm2"
+                },
+                {
+                    "name": "c2_GenCurrentA_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCurrentA_WireB"
+                },
+                {
+                    "name": "c2_GenActivePower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_Alm1"
+                },
+                {
+                    "name": "c2_GenActivePower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_Alm2"
+                },
+                {
+                    "name": "c2_GenActivePower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenActivePower_WireB"
+                },
+                {
+                    "name": "c2_GenReactPower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_Alm1"
+                },
+                {
+                    "name": "c2_GenReactPower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_Alm2"
+                },
+                {
+                    "name": "c2_GenReactPower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenReactPower_WireB"
+                },
+                {
+                    "name": "c2_VtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_Alm1"
+                },
+                {
+                    "name": "c2_VtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_Alm2"
+                },
+                {
+                    "name": "c2_VtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.VtdlB_WireB"
+                },
+                {
+                    "name": "c2_AtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_Alm1"
+                },
+                {
+                    "name": "c2_AtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_Alm2"
+                },
+                {
+                    "name": "c2_AtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.AtdlB_WireB"
+                },
+                {
+                    "name": "c2_UpperPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_Alm1"
+                },
+                {
+                    "name": "c2_UpperPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_Alm2"
+                },
+                {
+                    "name": "c2_UpperPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UpperPondLevel_WireB"
+                },
+                {
+                    "name": "c2_LowerPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_Alm1"
+                },
+                {
+                    "name": "c2_LowerPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_Alm2"
+                },
+                {
+                    "name": "c2_LowerPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.LowerPondLevel_WireB"
+                },
+                {
+                    "name": "c2_WicketGatePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_Alm1"
+                },
+                {
+                    "name": "c2_WicketGatePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_Alm2"
+                },
+                {
+                    "name": "c2_WicketGatePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.WicketGatePos_WireB"
+                },
+                {
+                    "name": "c2_RunnerBladePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_Alm1"
+                },
+                {
+                    "name": "c2_RunnerBladePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_Alm2"
+                },
+                {
+                    "name": "c2_RunnerBladePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.RunnerBladePos_WireB"
+                },
+                {
+                    "name": "c2_SpeedSignal1_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_Alm1"
+                },
+                {
+                    "name": "c2_SpeedSignal1_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_Alm2"
+                },
+                {
+                    "name": "c2_SpeedSignal1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal1_WireB"
+                },
+                {
+                    "name": "c2_SpeedSignal2_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_Alm1"
+                },
+                {
+                    "name": "c2_SpeedSignal2_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_Alm2"
+                },
+                {
+                    "name": "c2_SpeedSignal2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.SpeedSignal2_WireB"
+                },
+                {
+                    "name": "c2_TrashRackWaterLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_Alm1"
+                },
+                {
+                    "name": "c2_TrashRackWaterLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_Alm2"
+                },
+                {
+                    "name": "c2_TrashRackWaterLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TrashRackWaterLevel_WireB"
+                },
+                {
+                    "name": "c2_UnitFlow_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_Alm1"
+                },
+                {
+                    "name": "c2_UnitFlow_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_Alm2"
+                },
+                {
+                    "name": "c2_UnitFlow_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitFlow_WireB"
+                },
+                {
+                    "name": "c2_HpuPressure_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_Alm1"
+                },
+                {
+                    "name": "c2_HpuPressure_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_Alm2"
+                },
+                {
+                    "name": "c2_HpuPressure_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HpuPressure_WireB"
+                },
+                {
+                    "name": "c2_TurbOilHeadTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_H"
+                },
+                {
+                    "name": "c2_TurbOilHeadTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_HH"
+                },
+                {
+                    "name": "c2_TurbOilHeadTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbOilHeadTemp_WireB"
+                },
+                {
+                    "name": "c2_TurbGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_H"
+                },
+                {
+                    "name": "c2_TurbGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c2_TurbGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c2_TurbPackBoxTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_H"
+                },
+                {
+                    "name": "c2_TurbPackBoxTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_HH"
+                },
+                {
+                    "name": "c2_TurbPackBoxTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TurbPackBoxTemp_WireB"
+                },
+                {
+                    "name": "c2_GenCoupEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c2_GenCoupEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c2_GenCoupEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenCoupEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c2_GenOutEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c2_GenOutEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c2_GenOutEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenOutEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c2_OutThrustBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_H"
+                },
+                {
+                    "name": "c2_OutThrustBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_HH"
+                },
+                {
+                    "name": "c2_OutThrustBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.OutThrustBrgTemp_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp1_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp1_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp1_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp2_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp2_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp2_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp3_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp3_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp3_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp3_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp4_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp4_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp4_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp4_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp5_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp5_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp5_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp5_WireB"
+                },
+                {
+                    "name": "c2_GenStatWindTemp6_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_H"
+                },
+                {
+                    "name": "c2_GenStatWindTemp6_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_HH"
+                },
+                {
+                    "name": "c2_GenStatWindTemp6_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.GenStatWindTemp6_WireB"
+                },
+                {
+                    "name": "c2_Differential_Level_LimAlm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Differential_Level_LimAlm1"
+                },
+                {
+                    "name": "c2_Differential_Level_LimAlm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Differential_Level_LimAlm2"
+                },
+                {
+                    "name": "c2_EnabledUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.EnabledUnit"
+                },
+                {
+                    "name": "c2_CurrentLeadUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrentLeadUnit"
+                },
+                {
+                    "name": "c2_PLCWatchDogCircuitMalfunction"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PLCWatchDogCircuitMalfunction"
+                },
+                {
+                    "name": "c2_ExcON"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcON"
+                },
+                {
+                    "name": "c2_ExcOff"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.ExcOff"
+                },
+                {
+                    "name": "c2_DownTimeDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeDays"
+                },
+                {
+                    "name": "c2_DownTimeHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeHours"
+                },
+                {
+                    "name": "c2_DownTimeSinceTripDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeSinceTripDays"
+                },
+                {
+                    "name": "c2_DownTimeSinceTripHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.DownTimeSinceTripHours"
+                },
+                {
+                    "name": "c2_TotalMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.TotalMWh"
+                },
+                {
+                    "name": "c2_PrevYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevYearMWh"
+                },
+                {
+                    "name": "c2_CurrYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrYearMWh"
+                },
+                {
+                    "name": "c2_PrevMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevMonthMWh"
+                },
+                {
+                    "name": "c2_CurrMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrMonthMWh"
+                },
+                {
+                    "name": "c2_PrevDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PrevDayMWh"
+                },
+                {
+                    "name": "c2_CurrDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.CurrDayMWh"
+                },
+                {
+                    "name": "c2_PowerFactor"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.PowerFactor"
+                },
+                {
+                    "name": "c2_UnitStatus"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.UnitStatus"
+                },
+                {
+                    "name": "c2_Step1Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step1Status"
+                },
+                {
+                    "name": "c2_Step2Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step2Status"
+                },
+                {
+                    "name": "c2_Step3Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step3Status"
+                },
+                {
+                    "name": "c2_Step4Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step4Status"
+                },
+                {
+                    "name": "c2_Step5Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step5Status"
+                },
+                {
+                    "name": "c2_Step6Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step6Status"
+                },
+                {
+                    "name": "c2_Step7Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step7Status"
+                },
+                {
+                    "name": "c2_Step8Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step8Status"
+                },
+                {
+                    "name": "c2_Step9Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step9Status"
+                },
+                {
+                    "name": "c2_Step10Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step10Status"
+                },
+                {
+                    "name": "c2_Step11Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step11Status"
+                },
+                {
+                    "name": "c2_Step12Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step12Status"
+                },
+                {
+                    "name": "c2_Step13Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step13Status"
+                },
+                {
+                    "name": "c2_Step14Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step14Status"
+                },
+                {
+                    "name": "c2_Step20Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step20Status"
+                },
+                {
+                    "name": "c2_Step21Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step21Status"
+                },
+                {
+                    "name": "c2_Step22Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step22Status"
+                },
+                {
+                    "name": "c2_Step23Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step23Status"
+                },
+                {
+                    "name": "c2_Step24Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step24Status"
+                },
+                {
+                    "name": "c2_Step25Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step25Status"
+                },
+                {
+                    "name": "c2_Step26Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step26Status"
+                },
+                {
+                    "name": "c2_Step27Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step27Status"
+                },
+                {
+                    "name": "c2_Step28Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.Step28Status"
+                },
+                {
+                    "name": "c2_HWDiffProtDisabled"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control for emPC-A-iMX6 SL.Application.DB1.HWDiffProtDisabled"
+                }
+            ]
+        },
+        {
+            "clientId": "cg_opcua_client3",
+            "serverAddress": "opc.tcp://172.24.50.100:4840",
+            "pollInterval": 1,
+            "maxAge": 2000,
+            "maxSignalsPerRead": 100,
+            "minTimeBetweenRead": 100,
+            "nodesToRead": [
+                { 
+                    "name": "c3_ControlCabPowerSupply12Ok"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ControlCabPowerSupply12Ok"
+                },
+                {
+                    "name": "c3_WicketGateShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGateShutdownSolEnerg"
+                },
+                {
+                    "name": "c3_RunnerBladeShutdownSolEnerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladeShutdownSolEnerg"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT4"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT5"
+                },
+                {
+                    "name": "c3_BatteryChargerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BatteryChargerFailure"
+                },
+                {
+                    "name": "c3_StationServiceBreakerOpen"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationServiceBreakerOpen"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM1_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE1_BIT0"
+                },
+                {
+                    "name": "c3_StationPhaseLossUnderV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationPhaseLossUnderV"
+                },
+                {
+                    "name": "c3_GeneratorBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GeneratorBreakerClosed"
+                },
+                {
+                    "name": "c3_UnitSyncSpeedRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncSpeedRaise"
+                },
+                {
+                    "name": "c3_UnitSyncSpeedLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncSpeedLower"
+                },
+                {
+                    "name": "c3_UnitSyncVoltageRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncVoltageRaise"
+                },
+                {
+                    "name": "c3_UnitSyncVoltageLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncVoltageLower"
+                },
+                {
+                    "name": "c3_PLCLeadSelection"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCLeadSelection"
+                },
+                {
+                    "name": "c3_LineGroundFault51N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineGroundFault51N"
+                },
+                {
+                    "name": "c3_LineOvercurrentFault5051"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineOvercurrentFault5051"
+                },
+                {
+                    "name": "c3_MainTransfDiff87T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfDiff87T"
+                },
+                {
+                    "name": "c3_MainBusUnderOverVoltPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhA"
+                },
+                {
+                    "name": "c3_MainBusUnderOverVoltPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhB"
+                },
+                {
+                    "name": "c3_MainBusUnderOverVoltPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhC"
+                },
+                {
+                    "name": "c3_GenProtReversePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtReversePower"
+                },
+                {
+                    "name": "c3_GenTransfUndercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenTransfUndercurrent"
+                },
+                {
+                    "name": "c3_GenProtLossExcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtLossExcitation"
+                },
+                {
+                    "name": "c3_GenProtNeutralGroundOvervolt"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtNeutralGroundOvervolt"
+                },
+                {
+                    "name": "c3_GenProtNegSeqOvercurrent"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtNegSeqOvercurrent"
+                },
+                {
+                    "name": "c3_GenProtDifferential"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtDifferential"
+                },
+                {
+                    "name": "c3_GenProtVoltCtrlTimeOvercPhA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhA"
+                },
+                {
+                    "name": "c3_GenProtVoltCtrlTimeOvercPhB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhB"
+                },
+                {
+                    "name": "c3_GenProtVoltCtrlTimeOvercPhC"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhC"
+                },
+                {
+                    "name": "c3_MainBusOverUnderFreq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusOverUnderFreq"
+                },
+                {
+                    "name": "c3_GatePosGreatThanSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosGreatThanSNL"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM3_BYTE0_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT1"
+                },
+                {
+                    "name": "c3_GatePosClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosClosed"
+                },
+                {
+                    "name": "c3_GatePosRaise"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosRaise"
+                },
+                {
+                    "name": "c3_GatePosLower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosLower"
+                },
+                {
+                    "name": "c3_Spare_ENET1_DIM3_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT5"
+                },
+                {
+                    "name": "c3_StopCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StopCommand"
+                },
+                {
+                    "name": "c3_StartCommand"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StartCommand"
+                },
+                {
+                    "name": "c3_CtrlMode43CSManual"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CSManual"
+                },
+                {
+                    "name": "c3_CtrlMode43CS1LocalAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CS1LocalAuto"
+                },
+                {
+                    "name": "c3_CtrlMode43CS1RemoteAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CS1RemoteAuto"
+                },
+                {
+                    "name": "c3_GovMode43LCSLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GovMode43LCSLevel"
+                },
+                {
+                    "name": "c3_GovMode43LCSFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GovMode43LCSFlow"
+                },
+                {
+                    "name": "c3_AllMFSinAuto"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AllMFSinAuto"
+                },
+                {
+                    "name": "c3_PLCWatchDog"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCWatchDog"
+                },
+                {
+                    "name": "c3_ExcSystOverexcitation"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystOverexcitation"
+                },
+                {
+                    "name": "c3_NonLockoutRelay94"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.NonLockoutRelay94"
+                },
+                {
+                    "name": "c3_LockoutRelay86E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86E"
+                },
+                {
+                    "name": "c3_LockoutRelay86N"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86N"
+                },
+                {
+                    "name": "c3_LockoutRelay86T"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86T"
+                },
+                {
+                    "name": "c3_LockoutRelay86H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86H"
+                },
+                {
+                    "name": "c3_StationDCOvervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationDCOvervoltage"
+                },
+                {
+                    "name": "c3_StationDCUndervoltage"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationDCUndervoltage"
+                },
+                {
+                    "name": "c3_LineBreakerPowerFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineBreakerPowerFailure"
+                },
+                {
+                    "name": "c3_UnitSpeedGreatThanShaftCreep"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanShaftCreep"
+                },
+                {
+                    "name": "c3_UnitSpeedGreatThanOverSpeed2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanOverSpeed2"
+                },
+                {
+                    "name": "c3_UnitSpeedLessThan10pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedLessThan10pcSNL"
+                },
+                {
+                    "name": "c3_UnitSpeedGreatThan90pcSNL"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThan90pcSNL"
+                },
+                {
+                    "name": "c3_UnitSpeedGreatThanOverSpeed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanOverSpeed"
+                },
+                {
+                    "name": "c3_LineBreakerClosed"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineBreakerClosed"
+                },
+                {
+                    "name": "c3_ExcSystFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystFault"
+                },
+                {
+                    "name": "c3_NormalStopButton"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.NormalStopButton"
+                },
+                {
+                    "name": "c3_MaintenanceSwitch"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MaintenanceSwitch"
+                },
+                {
+                    "name": "c3_GenVibrationHorizontal"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVibrationHorizontal"
+                },
+                {
+                    "name": "c3_ExcSystGroundFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystGroundFault"
+                },
+                {
+                    "name": "c3_TurbVibrationNormalStop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbVibrationNormalStop"
+                },
+                {
+                    "name": "c3_TurbVibrationAlarm"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbVibrationAlarm"
+                },
+                {
+                    "name": "c3_UnitMWhPulse"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitMWhPulse"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM5_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM5_BYTE0_BIT5"
+                },
+                {
+                    "name": "c3_TurbBearSealWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbBearSealWaterFlowLow"
+                },
+                {
+                    "name": "c3_TurbGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBearTempHigh"
+                },
+                {
+                    "name": "c3_PackBoxCoolWaterFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PackBoxCoolWaterFlowLow"
+                },
+                {
+                    "name": "c3_GenCoupEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c3_GenLubeOilFlowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenLubeOilFlowLow"
+                },
+                {
+                    "name": "c3_ThrustBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ThrustBearTempHigh"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM5_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM5_BYTE1_BIT4"
+                },
+                {
+                    "name": "c3_GenOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOilLevelLow"
+                },
+                {
+                    "name": "c3_GenOilLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOilLevelHigh"
+                },
+                {
+                    "name": "c3_LubeOilTankTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LubeOilTankTempHigh"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM6_BYTE0_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE0_BIT0"
+                },
+                {
+                    "name": "c3_GenOutbEndGuideBearTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutbEndGuideBearTempHigh"
+                },
+                {
+                    "name": "c3_ShaftLocked"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ShaftLocked"
+                },
+                {
+                    "name": "c3_MainTransfSuddenPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfSuddenPressure"
+                },
+                {
+                    "name": "c3_MainTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfTempHigh"
+                },
+                {
+                    "name": "c3_MainTransfOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfOilLevelLow"
+                },
+                {
+                    "name": "c3_StatServiceTransfTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StatServiceTransfTempHigh"
+                },
+                {
+                    "name": "c3_HPUOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilLevelLow"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM6_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT0"
+                },
+                {
+                    "name": "c3_HPUOilPressureLowLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilPressureLowLow"
+                },
+                {
+                    "name": "c3_HPUOilPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilPressureLow"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM6_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT3"
+                },
+                {
+                    "name": "c3_BrakesOn"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BrakesOn"
+                },
+                {
+                    "name": "c3_CoolWaterSystPressureLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystPressureLow"
+                },
+                {
+                    "name": "c3_Fire"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Fire"
+                },
+                {
+                    "name": "c3_Intrusion"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Intrusion"
+                },
+                {
+                    "name": "c3_PlantSumpWaterLevelHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PlantSumpWaterLevelHigh"
+                },
+                {
+                    "name": "c3_ExcSystReady"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystReady"
+                },
+                {
+                    "name": "c3_MPTOilTempHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MPTOilTempHigh"
+                },
+                {
+                    "name": "c3_CoolWaterSystPumpFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystPumpFailure"
+                },
+                {
+                    "name": "c3_CoolWaterSystDiffPressureHigh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystDiffPressureHigh"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM7_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM7_BYTE0_BIT5"
+                },
+                {
+                    "name": "c3_VoltageImbalance"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VoltageImbalance"
+                },
+                {
+                    "name": "c3_GNDFault"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GNDFault"
+                },
+                {
+                    "name": "c3_BatteryDisconnectPosition"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BatteryDisconnectPosition"
+                },
+                {
+                    "name": "c3_B52G2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.B52G2"
+                },
+                {
+                    "name": "c3_OtherPlantRunning"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OtherPlantRunning"
+                },
+                {
+                    "name": "c3_ManualTransferSwitchEmerg"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ManualTransferSwitchEmerg"
+                },
+                {
+                    "name": "c3_Unit1Estop"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Unit1Estop"
+                },
+                {
+                    "name": "c3_LubeOilLowPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LubeOilLowPressure"
+                },
+                {
+                    "name": "c3_GenBearOilLevelLow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenBearOilLevelLow"
+                },
+                {
+                    "name": "c3_LossLeadLubeOilPump"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LossLeadLubeOilPump"
+                },
+                {
+                    "name": "c3_ExcSystIncompleteSeq"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystIncompleteSeq"
+                },
+                {
+                    "name": "c3_BrakeFailure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BrakeFailure"
+                },
+                {
+                    "name": "c3_HPUStartPermissive"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUStartPermissive"
+                },
+                {
+                    "name": "c3_B52E"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.B52E"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT4"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT5"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT6"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT7"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT0"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT0"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT1"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT2"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT3"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT4"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT5"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT6"
+                },
+                {
+                    "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT7"
+                },
+                {
+                    "name": "c3_GenVoltageV"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV"
+                },
+                {
+                    "name": "c3_GenCurrentA"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA"
+                },
+                {
+                    "name": "c3_GenActivePower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower"
+                },
+                {
+                    "name": "c3_GenReactPower"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower"
+                },
+                {
+                    "name": "c3_VtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB"
+                },
+                {
+                    "name": "c3_AtdlB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB"
+                },
+                {
+                    "name": "c3_UpperPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel"
+                },
+                {
+                    "name": "c3_LowerPondLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel"
+                },
+                {
+                    "name": "c3_WicketGatePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos"
+                },
+                {
+                    "name": "c3_RunnerBladePos"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos"
+                },
+                {
+                    "name": "c3_SpeedSignal1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1"
+                },
+                {
+                    "name": "c3_SpeedSignal2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2"
+                },
+                {
+                    "name": "c3_TrashRackWaterLevel"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel"
+                },
+                {
+                    "name": "c3_Spare_ENET2_AIM2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_AIM2_WORD5"
+                },
+                {
+                    "name": "c3_UnitFlow"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow"
+                },
+                {
+                    "name": "c3_HpuPressure"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure"
+                },
+                {
+                    "name": "c3_GenStatWindTemp1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1"
+                },
+                {
+                    "name": "c3_GenStatWindTemp2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2"
+                },
+                {
+                    "name": "c3_GenStatWindTemp3"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3"
+                },
+                {
+                    "name": "c3_GenStatWindTemp4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4"
+                },
+                {
+                    "name": "c3_GenStatWindTemp5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5"
+                },
+                {
+                    "name": "c3_GenStatWindTemp6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6"
+                },
+                {
+                    "name": "c3_TurbOilHeadTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp"
+                },
+                {
+                    "name": "c3_TurbGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp"
+                },
+                {
+                    "name": "c3_TurbPackBoxTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp"
+                },
+                {
+                    "name": "c3_GenCoupEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp"
+                },
+                {
+                    "name": "c3_GenOutEndGuideBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp"
+                },
+                {
+                    "name": "c3_OutThrustBrgTemp"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp"
+                },
+                {
+                    "name": "c3_Spare_ENET2_RTD2_WORD4"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD4"
+                },
+                {
+                    "name": "c3_Spare_ENET2_RTD2_WORD5"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD5"
+                },
+                {
+                    "name": "c3_Spare_ENET2_RTD2_WORD6"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD6"
+                },
+                {
+                    "name": "c3_Spare_ENET2_RTD2_WORD7"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD7"
+                },
+                {
+                    "name": "c3_GenVoltageV_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_Alm1"
+                },
+                {
+                    "name": "c3_GenVoltageV_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_Alm2"
+                },
+                {
+                    "name": "c3_GenVoltageV_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_WireB"
+                },
+                {
+                    "name": "c3_GenCurrentA_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_Alm1"
+                },
+                {
+                    "name": "c3_GenCurrentA_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_Alm2"
+                },
+                {
+                    "name": "c3_GenCurrentA_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_WireB"
+                },
+                {
+                    "name": "c3_GenActivePower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_Alm1"
+                },
+                {
+                    "name": "c3_GenActivePower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_Alm2"
+                },
+                {
+                    "name": "c3_GenActivePower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_WireB"
+                },
+                {
+                    "name": "c3_GenReactPower_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_Alm1"
+                },
+                {
+                    "name": "c3_GenReactPower_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_Alm2"
+                },
+                {
+                    "name": "c3_GenReactPower_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_WireB"
+                },
+                {
+                    "name": "c3_VtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_Alm1"
+                },
+                {
+                    "name": "c3_VtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_Alm2"
+                },
+                {
+                    "name": "c3_VtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_WireB"
+                },
+                {
+                    "name": "c3_AtdlB_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_Alm1"
+                },
+                {
+                    "name": "c3_AtdlB_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_Alm2"
+                },
+                {
+                    "name": "c3_AtdlB_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_WireB"
+                },
+                {
+                    "name": "c3_UpperPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_Alm1"
+                },
+                {
+                    "name": "c3_UpperPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_Alm2"
+                },
+                {
+                    "name": "c3_UpperPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_WireB"
+                },
+                {
+                    "name": "c3_LowerPondLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_Alm1"
+                },
+                {
+                    "name": "c3_LowerPondLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_Alm2"
+                },
+                {
+                    "name": "c3_LowerPondLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_WireB"
+                },
+                {
+                    "name": "c3_WicketGatePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_Alm1"
+                },
+                {
+                    "name": "c3_WicketGatePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_Alm2"
+                },
+                {
+                    "name": "c3_WicketGatePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_WireB"
+                },
+                {
+                    "name": "c3_RunnerBladePos_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_Alm1"
+                },
+                {
+                    "name": "c3_RunnerBladePos_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_Alm2"
+                },
+                {
+                    "name": "c3_RunnerBladePos_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_WireB"
+                },
+                {
+                    "name": "c3_SpeedSignal1_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_Alm1"
+                },
+                {
+                    "name": "c3_SpeedSignal1_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_Alm2"
+                },
+                {
+                    "name": "c3_SpeedSignal1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_WireB"
+                },
+                {
+                    "name": "c3_SpeedSignal2_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_Alm1"
+                },
+                {
+                    "name": "c3_SpeedSignal2_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_Alm2"
+                },
+                {
+                    "name": "c3_SpeedSignal2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_WireB"
+                },
+                {
+                    "name": "c3_TrashRackWaterLevel_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_Alm1"
+                },
+                {
+                    "name": "c3_TrashRackWaterLevel_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_Alm2"
+                },
+                {
+                    "name": "c3_TrashRackWaterLevel_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_WireB"
+                },
+                {
+                    "name": "c3_UnitFlow_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_Alm1"
+                },
+                {
+                    "name": "c3_UnitFlow_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_Alm2"
+                },
+                {
+                    "name": "c3_UnitFlow_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_WireB"
+                },
+                {
+                    "name": "c3_HpuPressure_Alm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_Alm1"
+                },
+                {
+                    "name": "c3_HpuPressure_Alm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_Alm2"
+                },
+                {
+                    "name": "c3_HpuPressure_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_WireB"
+                },
+                {
+                    "name": "c3_TurbOilHeadTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_H"
+                },
+                {
+                    "name": "c3_TurbOilHeadTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_HH"
+                },
+                {
+                    "name": "c3_TurbOilHeadTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_WireB"
+                },
+                {
+                    "name": "c3_TurbGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_H"
+                },
+                {
+                    "name": "c3_TurbGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c3_TurbGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c3_TurbPackBoxTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_H"
+                },
+                {
+                    "name": "c3_TurbPackBoxTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_HH"
+                },
+                {
+                    "name": "c3_TurbPackBoxTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_WireB"
+                },
+                {
+                    "name": "c3_GenCoupEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c3_GenCoupEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c3_GenCoupEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c3_GenOutEndGuideBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_H"
+                },
+                {
+                    "name": "c3_GenOutEndGuideBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_HH"
+                },
+                {
+                    "name": "c3_GenOutEndGuideBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_WireB"
+                },
+                {
+                    "name": "c3_OutThrustBrgTemp_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_H"
+                },
+                {
+                    "name": "c3_OutThrustBrgTemp_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_HH"
+                },
+                {
+                    "name": "c3_OutThrustBrgTemp_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp1_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp1_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp1_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp2_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp2_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp2_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp3_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp3_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp3_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp4_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp4_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp4_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp5_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp5_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp5_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_WireB"
+                },
+                {
+                    "name": "c3_GenStatWindTemp6_H"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_H"
+                },
+                {
+                    "name": "c3_GenStatWindTemp6_HH"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_HH"
+                },
+                {
+                    "name": "c3_GenStatWindTemp6_WireB"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_WireB"
+                },
+                {
+                    "name": "c3_Differential_Level_LimAlm1"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Differential_Level_LimAlm1"
+                },
+                {
+                    "name": "c3_Differential_Level_LimAlm2"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Differential_Level_LimAlm2"
+                },
+                {
+                    "name": "c3_EnabledUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.EnabledUnit"
+                },
+                {
+                    "name": "c3_CurrentLeadUnit"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrentLeadUnit"
+                },
+                {
+                    "name": "c3_PLCWatchDogCircuitMalfunction"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCWatchDogCircuitMalfunction"
+                },
+                {
+                    "name": "c3_ExcON"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcON"
+                },
+                {
+                    "name": "c3_ExcOff"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcOff"
+                },
+                {
+                    "name": "c3_DownTimeDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeDays"
+                },
+                {
+                    "name": "c3_DownTimeHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeHours"
+                },
+                {
+                    "name": "c3_DownTimeSinceTripDays"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeSinceTripDays"
+                },
+                {
+                    "name": "c3_DownTimeSinceTripHours"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeSinceTripHours"
+                },
+                {
+                    "name": "c3_TotalMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TotalMWh"
+                },
+                {
+                    "name": "c3_PrevYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevYearMWh"
+                },
+                {
+                    "name": "c3_CurrYearMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrYearMWh"
+                },
+                {
+                    "name": "c3_PrevMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevMonthMWh"
+                },
+                {
+                    "name": "c3_CurrMonthMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrMonthMWh"
+                },
+                {
+                    "name": "c3_PrevDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevDayMWh"
+                },
+                {
+                    "name": "c3_CurrDayMWh"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrDayMWh"
+                },
+                {
+                    "name": "c3_PowerFactor"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PowerFactor"
+                },
+                {
+                    "name": "c3_UnitStatus"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitStatus"
+                },
+                {
+                    "name": "c3_Step1Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step1Status"
+                },
+                {
+                    "name": "c3_Step2Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step2Status"
+                },
+                {
+                    "name": "c3_Step3Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step3Status"
+                },
+                {
+                    "name": "c3_Step4Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step4Status"
+                },
+                {
+                    "name": "c3_Step5Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step5Status"
+                },
+                {
+                    "name": "c3_Step6Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step6Status"
+                },
+                {
+                    "name": "c3_Step7Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step7Status"
+                },
+                {
+                    "name": "c3_Step8Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step8Status"
+                },
+                {
+                    "name": "c3_Step9Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step9Status"
+                },
+                {
+                    "name": "c3_Step10Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step10Status"
+                },
+                {
+                    "name": "c3_Step11Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step11Status"
+                },
+                {
+                    "name": "c3_Step12Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step12Status"
+                },
+                {
+                    "name": "c3_Step13Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step13Status"
+                },
+                {
+                    "name": "c3_Step14Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step14Status"
+                },
+                {
+                    "name": "c3_Step20Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step20Status"
+                },
+                {
+                    "name": "c3_Step21Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step21Status"
+                },
+                {
+                    "name": "c3_Step22Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step22Status"
+                },
+                {
+                    "name": "c3_Step23Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step23Status"
+                },
+                {
+                    "name": "c3_Step24Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step24Status"
+                },
+                {
+                    "name": "c3_Step25Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step25Status"
+                },
+                {
+                    "name": "c3_Step26Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step26Status"
+                },
+                {
+                    "name": "c3_Step27Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step27Status"
+                },
+                {
+                    "name": "c3_Step28Status"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step28Status"
+                },
+                {
+                    "name": "c3_HWDiffProtDisabled"
+                    ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HWDiffProtDisabled"
                 }
             ]
         }

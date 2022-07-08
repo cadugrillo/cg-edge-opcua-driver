@@ -33,6 +33,7 @@ var (
 	payloads   []Payload
 	v          interface{}
 	c          [8]*opcua.Client
+	connStatus [8]bool
 )
 
 type NodesList struct {
@@ -204,15 +205,32 @@ func main() {
 	for i := 0; i < len(ConfigFile.OpcUaClients); i++ {
 		c[i] = opcua.NewClient(*endpoints[i], opcua.SecurityMode(ua.MessageSecurityModeNone), opcua.AutoReconnect(true), opcua.ReconnectInterval(time.Minute))
 		if err := c[i].Connect(ctx); err != nil {
-			log.Fatal(err)
+			fmt.Println(err)
+			connStatus[i] = false
+			fmt.Println(ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION NOT STABLISHED")
+			continue
 		}
 		defer c[i].CloseWithContext(ctx)
+		connStatus[i] = true
 		fmt.Println(ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION STABLISHED")
 	}
 
 	for u := 0; u < len(ConfigFile.OpcUaClients); u++ {
 		go func(u int, ctx context.Context) {
 			for {
+
+				if connStatus[u] == false {
+					fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - ATTEMPTING TO RECONNECT")
+					c[u] = opcua.NewClient(*endpoints[u], opcua.SecurityMode(ua.MessageSecurityModeNone), opcua.AutoReconnect(true), opcua.ReconnectInterval(time.Minute))
+					time.Sleep(time.Duration(5) * time.Second)
+					if err := c[u].Connect(ctx); err != nil {
+						fmt.Println(err)
+						continue
+					}
+					fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - CONNECTION RESTABLISHED")
+					connStatus[u] = true
+					continue
+				}
 
 				for j := 0; j < len(nodesList[u].nodesGroup); j++ {
 					req := &ua.ReadRequest{
@@ -225,21 +243,15 @@ func main() {
 					if err != nil {
 						fmt.Println("Read failed: %", err)
 						c[u].Close()
-						fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - ATTEMPTING TO RECONNECT")
-						c[u] = opcua.NewClient(*endpoints[u], opcua.SecurityMode(ua.MessageSecurityModeNone), opcua.AutoReconnect(true), opcua.ReconnectInterval(time.Minute))
-						if err := c[u].Connect(ctx); err != nil {
-							fmt.Println(err)
-							//time.Sleep(5 * time.Second)
-							break
-						}
-						fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - CONNECTION RESTABLISHED")
+						connStatus[u] = false
 						break
 					}
 
 					for i := 0; i < len(resp.Results); i++ {
 
 						if resp.Results[i].Status != ua.StatusOK {
-							log.Fatalf("Status not OK: %v", resp.Results[i].Status)
+							log.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::Status not OK:", resp.Results[i].Status)
+							continue
 						}
 
 						x := resp.Results[i].Value.Value()
@@ -248,16 +260,16 @@ func main() {
 							log.Println("node value is nil")
 						case bool:
 							v = x.(bool)
-							log.Println("node value (bool): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
+							//log.Println("node value (bool): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
 						case uint16:
 							v = x.(uint16)
-							log.Println("node value (uint16): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
+							//log.Println("node value (uint16): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
 						case int16:
 							v = x.(int16)
-							log.Println("node value (int16): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
+							//log.Println("node value (int16): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
 						case float32:
 							v = x.(float32)
-							log.Println("node value (float32): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
+							//log.Println("node value (float32): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
 						}
 
 						opcsignal := []Signal{{Name: ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name,

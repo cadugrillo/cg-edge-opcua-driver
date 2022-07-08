@@ -1,0 +1,1145 @@
+
+    { 
+        "name": "c3_ControlCabPowerSupply12Ok"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ControlCabPowerSupply12Ok"
+    },
+    {
+        "name": "c3_WicketGateShutdownSolEnerg"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGateShutdownSolEnerg"
+    },
+    {
+        "name": "c3_RunnerBladeShutdownSolEnerg"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladeShutdownSolEnerg"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT3"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT3"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT4"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM1_BYTE0_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE0_BIT5"
+    },
+    {
+        "name": "c3_BatteryChargerFailure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BatteryChargerFailure"
+    },
+    {
+        "name": "c3_StationServiceBreakerOpen"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationServiceBreakerOpen"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM1_BYTE1_BIT0"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM1_BYTE1_BIT0"
+    },
+    {
+        "name": "c3_StationPhaseLossUnderV"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationPhaseLossUnderV"
+    },
+    {
+        "name": "c3_GeneratorBreakerClosed"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GeneratorBreakerClosed"
+    },
+    {
+        "name": "c3_UnitSyncSpeedRaise"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncSpeedRaise"
+    },
+    {
+        "name": "c3_UnitSyncSpeedLower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncSpeedLower"
+    },
+    {
+        "name": "c3_UnitSyncVoltageRaise"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncVoltageRaise"
+    },
+    {
+        "name": "c3_UnitSyncVoltageLower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSyncVoltageLower"
+    },
+    {
+        "name": "c3_PLCLeadSelection"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCLeadSelection"
+    },
+    {
+        "name": "c3_LineGroundFault51N"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineGroundFault51N"
+    },
+    {
+        "name": "c3_LineOvercurrentFault5051"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineOvercurrentFault5051"
+    },
+    {
+        "name": "c3_MainTransfDiff87T"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfDiff87T"
+    },
+    {
+        "name": "c3_MainBusUnderOverVoltPhA"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhA"
+    },
+    {
+        "name": "c3_MainBusUnderOverVoltPhB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhB"
+    },
+    {
+        "name": "c3_MainBusUnderOverVoltPhC"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusUnderOverVoltPhC"
+    },
+    {
+        "name": "c3_GenProtReversePower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtReversePower"
+    },
+    {
+        "name": "c3_GenTransfUndercurrent"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenTransfUndercurrent"
+    },
+    {
+        "name": "c3_GenProtLossExcitation"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtLossExcitation"
+    },
+    {
+        "name": "c3_GenProtNeutralGroundOvervolt"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtNeutralGroundOvervolt"
+    },
+    {
+        "name": "c3_GenProtNegSeqOvercurrent"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtNegSeqOvercurrent"
+    },
+    {
+        "name": "c3_GenProtDifferential"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtDifferential"
+    },
+    {
+        "name": "c3_GenProtVoltCtrlTimeOvercPhA"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhA"
+    },
+    {
+        "name": "c3_GenProtVoltCtrlTimeOvercPhB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhB"
+    },
+    {
+        "name": "c3_GenProtVoltCtrlTimeOvercPhC"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenProtVoltCtrlTimeOvercPhC"
+    },
+    {
+        "name": "c3_MainBusOverUnderFreq"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainBusOverUnderFreq"
+    },
+    {
+        "name": "c3_GatePosGreatThanSNL"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosGreatThanSNL"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM3_BYTE0_BIT1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT1"
+    },
+    {
+        "name": "c3_GatePosClosed"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosClosed"
+    },
+    {
+        "name": "c3_GatePosRaise"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosRaise"
+    },
+    {
+        "name": "c3_GatePosLower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GatePosLower"
+    },
+    {
+        "name": "c3_Spare_ENET1_DIM3_BYTE0_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET1_DIM3_BYTE0_BIT5"
+    },
+    {
+        "name": "c3_StopCommand"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StopCommand"
+    },
+    {
+        "name": "c3_StartCommand"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StartCommand"
+    },
+    {
+        "name": "c3_CtrlMode43CSManual"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CSManual"
+    },
+    {
+        "name": "c3_CtrlMode43CS1LocalAuto"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CS1LocalAuto"
+    },
+    {
+        "name": "c3_CtrlMode43CS1RemoteAuto"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CtrlMode43CS1RemoteAuto"
+    },
+    {
+        "name": "c3_GovMode43LCSLevel"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GovMode43LCSLevel"
+    },
+    {
+        "name": "c3_GovMode43LCSFlow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GovMode43LCSFlow"
+    },
+    {
+        "name": "c3_AllMFSinAuto"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AllMFSinAuto"
+    },
+    {
+        "name": "c3_PLCWatchDog"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCWatchDog"
+    },
+    {
+        "name": "c3_ExcSystOverexcitation"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystOverexcitation"
+    },
+    {
+        "name": "c3_NonLockoutRelay94"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.NonLockoutRelay94"
+    },
+    {
+        "name": "c3_LockoutRelay86E"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86E"
+    },
+    {
+        "name": "c3_LockoutRelay86N"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86N"
+    },
+    {
+        "name": "c3_LockoutRelay86T"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86T"
+    },
+    {
+        "name": "c3_LockoutRelay86H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LockoutRelay86H"
+    },
+    {
+        "name": "c3_StationDCOvervoltage"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationDCOvervoltage"
+    },
+    {
+        "name": "c3_StationDCUndervoltage"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StationDCUndervoltage"
+    },
+    {
+        "name": "c3_LineBreakerPowerFailure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineBreakerPowerFailure"
+    },
+    {
+        "name": "c3_UnitSpeedGreatThanShaftCreep"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanShaftCreep"
+    },
+    {
+        "name": "c3_UnitSpeedGreatThanOverSpeed2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanOverSpeed2"
+    },
+    {
+        "name": "c3_UnitSpeedLessThan10pcSNL"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedLessThan10pcSNL"
+    },
+    {
+        "name": "c3_UnitSpeedGreatThan90pcSNL"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThan90pcSNL"
+    },
+    {
+        "name": "c3_UnitSpeedGreatThanOverSpeed"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitSpeedGreatThanOverSpeed"
+    },
+    {
+        "name": "c3_LineBreakerClosed"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LineBreakerClosed"
+    },
+    {
+        "name": "c3_ExcSystFault"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystFault"
+    },
+    {
+        "name": "c3_NormalStopButton"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.NormalStopButton"
+    },
+    {
+        "name": "c3_MaintenanceSwitch"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MaintenanceSwitch"
+    },
+    {
+        "name": "c3_GenVibrationHorizontal"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVibrationHorizontal"
+    },
+    {
+        "name": "c3_ExcSystGroundFault"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystGroundFault"
+    },
+    {
+        "name": "c3_TurbVibrationNormalStop"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbVibrationNormalStop"
+    },
+    {
+        "name": "c3_TurbVibrationAlarm"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbVibrationAlarm"
+    },
+    {
+        "name": "c3_UnitMWhPulse"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitMWhPulse"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM5_BYTE0_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM5_BYTE0_BIT5"
+    },
+    {
+        "name": "c3_TurbBearSealWaterFlowLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbBearSealWaterFlowLow"
+    },
+    {
+        "name": "c3_TurbGuideBearTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBearTempHigh"
+    },
+    {
+        "name": "c3_PackBoxCoolWaterFlowLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PackBoxCoolWaterFlowLow"
+    },
+    {
+        "name": "c3_GenCoupEndGuideBearTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBearTempHigh"
+    },
+    {
+        "name": "c3_GenLubeOilFlowLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenLubeOilFlowLow"
+    },
+    {
+        "name": "c3_ThrustBearTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ThrustBearTempHigh"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM5_BYTE1_BIT4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM5_BYTE1_BIT4"
+    },
+    {
+        "name": "c3_GenOilLevelLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOilLevelLow"
+    },
+    {
+        "name": "c3_GenOilLevelHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOilLevelHigh"
+    },
+    {
+        "name": "c3_LubeOilTankTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LubeOilTankTempHigh"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM6_BYTE0_BIT0"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE0_BIT0"
+    },
+    {
+        "name": "c3_GenOutbEndGuideBearTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutbEndGuideBearTempHigh"
+    },
+    {
+        "name": "c3_ShaftLocked"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ShaftLocked"
+    },
+    {
+        "name": "c3_MainTransfSuddenPressure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfSuddenPressure"
+    },
+    {
+        "name": "c3_MainTransfTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfTempHigh"
+    },
+    {
+        "name": "c3_MainTransfOilLevelLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MainTransfOilLevelLow"
+    },
+    {
+        "name": "c3_StatServiceTransfTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.StatServiceTransfTempHigh"
+    },
+    {
+        "name": "c3_HPUOilLevelLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilLevelLow"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM6_BYTE1_BIT0"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT0"
+    },
+    {
+        "name": "c3_HPUOilPressureLowLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilPressureLowLow"
+    },
+    {
+        "name": "c3_HPUOilPressureLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUOilPressureLow"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM6_BYTE1_BIT3"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM6_BYTE1_BIT3"
+    },
+    {
+        "name": "c3_BrakesOn"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BrakesOn"
+    },
+    {
+        "name": "c3_CoolWaterSystPressureLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystPressureLow"
+    },
+    {
+        "name": "c3_Fire"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Fire"
+    },
+    {
+        "name": "c3_Intrusion"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Intrusion"
+    },
+    {
+        "name": "c3_PlantSumpWaterLevelHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PlantSumpWaterLevelHigh"
+    },
+    {
+        "name": "c3_ExcSystReady"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystReady"
+    },
+    {
+        "name": "c3_MPTOilTempHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.MPTOilTempHigh"
+    },
+    {
+        "name": "c3_CoolWaterSystPumpFailure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystPumpFailure"
+    },
+    {
+        "name": "c3_CoolWaterSystDiffPressureHigh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CoolWaterSystDiffPressureHigh"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM7_BYTE0_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM7_BYTE0_BIT5"
+    },
+    {
+        "name": "c3_VoltageImbalance"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VoltageImbalance"
+    },
+    {
+        "name": "c3_GNDFault"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GNDFault"
+    },
+    {
+        "name": "c3_BatteryDisconnectPosition"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BatteryDisconnectPosition"
+    },
+    {
+        "name": "c3_B52G2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.B52G2"
+    },
+    {
+        "name": "c3_OtherPlantRunning"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OtherPlantRunning"
+    },
+    {
+        "name": "c3_ManualTransferSwitchEmerg"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ManualTransferSwitchEmerg"
+    },
+    {
+        "name": "c3_Unit1Estop"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Unit1Estop"
+    },
+    {
+        "name": "c3_LubeOilLowPressure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LubeOilLowPressure"
+    },
+    {
+        "name": "c3_GenBearOilLevelLow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenBearOilLevelLow"
+    },
+    {
+        "name": "c3_LossLeadLubeOilPump"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LossLeadLubeOilPump"
+    },
+    {
+        "name": "c3_ExcSystIncompleteSeq"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcSystIncompleteSeq"
+    },
+    {
+        "name": "c3_BrakeFailure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.BrakeFailure"
+    },
+    {
+        "name": "c3_HPUStartPermissive"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HPUStartPermissive"
+    },
+    {
+        "name": "c3_B52E"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.B52E"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT4"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT5"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT6"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT6"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE0_BIT7"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE0_BIT7"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT0"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT0"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT1"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT2"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT3"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT3"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT4"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT5"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT6"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT6"
+    },
+    {
+        "name": "c3_Spare_ENET2_DIM8_BYTE1_BIT7"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_DIM8_BYTE1_BIT7"
+    },
+    {
+        "name": "c3_GenVoltageV"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV"
+    },
+    {
+        "name": "c3_GenCurrentA"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA"
+    },
+    {
+        "name": "c3_GenActivePower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower"
+    },
+    {
+        "name": "c3_GenReactPower"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower"
+    },
+    {
+        "name": "c3_VtdlB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB"
+    },
+    {
+        "name": "c3_AtdlB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB"
+    },
+    {
+        "name": "c3_UpperPondLevel"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel"
+    },
+    {
+        "name": "c3_LowerPondLevel"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel"
+    },
+    {
+        "name": "c3_WicketGatePos"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos"
+    },
+    {
+        "name": "c3_RunnerBladePos"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos"
+    },
+    {
+        "name": "c3_SpeedSignal1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1"
+    },
+    {
+        "name": "c3_SpeedSignal2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2"
+    },
+    {
+        "name": "c3_TrashRackWaterLevel"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel"
+    },
+    {
+        "name": "c3_Spare_ENET2_AIM2_WORD5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_AIM2_WORD5"
+    },
+    {
+        "name": "c3_UnitFlow"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow"
+    },
+    {
+        "name": "c3_HpuPressure"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure"
+    },
+    {
+        "name": "c3_GenStatWindTemp1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1"
+    },
+    {
+        "name": "c3_GenStatWindTemp2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2"
+    },
+    {
+        "name": "c3_GenStatWindTemp3"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3"
+    },
+    {
+        "name": "c3_GenStatWindTemp4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4"
+    },
+    {
+        "name": "c3_GenStatWindTemp5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5"
+    },
+    {
+        "name": "c3_GenStatWindTemp6"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6"
+    },
+    {
+        "name": "c3_TurbOilHeadTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp"
+    },
+    {
+        "name": "c3_TurbGuideBrgTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp"
+    },
+    {
+        "name": "c3_TurbPackBoxTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp"
+    },
+    {
+        "name": "c3_GenCoupEndGuideBrgTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp"
+    },
+    {
+        "name": "c3_GenOutEndGuideBrgTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp"
+    },
+    {
+        "name": "c3_OutThrustBrgTemp"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp"
+    },
+    {
+        "name": "c3_Spare_ENET2_RTD2_WORD4"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD4"
+    },
+    {
+        "name": "c3_Spare_ENET2_RTD2_WORD5"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD5"
+    },
+    {
+        "name": "c3_Spare_ENET2_RTD2_WORD6"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD6"
+    },
+    {
+        "name": "c3_Spare_ENET2_RTD2_WORD7"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Spare_ENET2_RTD2_WORD7"
+    },
+    {
+        "name": "c3_GenVoltageV_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_Alm1"
+    },
+    {
+        "name": "c3_GenVoltageV_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_Alm2"
+    },
+    {
+        "name": "c3_GenVoltageV_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenVoltageV_WireB"
+    },
+    {
+        "name": "c3_GenCurrentA_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_Alm1"
+    },
+    {
+        "name": "c3_GenCurrentA_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_Alm2"
+    },
+    {
+        "name": "c3_GenCurrentA_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCurrentA_WireB"
+    },
+    {
+        "name": "c3_GenActivePower_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_Alm1"
+    },
+    {
+        "name": "c3_GenActivePower_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_Alm2"
+    },
+    {
+        "name": "c3_GenActivePower_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenActivePower_WireB"
+    },
+    {
+        "name": "c3_GenReactPower_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_Alm1"
+    },
+    {
+        "name": "c3_GenReactPower_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_Alm2"
+    },
+    {
+        "name": "c3_GenReactPower_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenReactPower_WireB"
+    },
+    {
+        "name": "c3_VtdlB_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_Alm1"
+    },
+    {
+        "name": "c3_VtdlB_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_Alm2"
+    },
+    {
+        "name": "c3_VtdlB_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.VtdlB_WireB"
+    },
+    {
+        "name": "c3_AtdlB_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_Alm1"
+    },
+    {
+        "name": "c3_AtdlB_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_Alm2"
+    },
+    {
+        "name": "c3_AtdlB_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.AtdlB_WireB"
+    },
+    {
+        "name": "c3_UpperPondLevel_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_Alm1"
+    },
+    {
+        "name": "c3_UpperPondLevel_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_Alm2"
+    },
+    {
+        "name": "c3_UpperPondLevel_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UpperPondLevel_WireB"
+    },
+    {
+        "name": "c3_LowerPondLevel_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_Alm1"
+    },
+    {
+        "name": "c3_LowerPondLevel_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_Alm2"
+    },
+    {
+        "name": "c3_LowerPondLevel_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.LowerPondLevel_WireB"
+    },
+    {
+        "name": "c3_WicketGatePos_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_Alm1"
+    },
+    {
+        "name": "c3_WicketGatePos_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_Alm2"
+    },
+    {
+        "name": "c3_WicketGatePos_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.WicketGatePos_WireB"
+    },
+    {
+        "name": "c3_RunnerBladePos_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_Alm1"
+    },
+    {
+        "name": "c3_RunnerBladePos_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_Alm2"
+    },
+    {
+        "name": "c3_RunnerBladePos_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.RunnerBladePos_WireB"
+    },
+    {
+        "name": "c3_SpeedSignal1_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_Alm1"
+    },
+    {
+        "name": "c3_SpeedSignal1_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_Alm2"
+    },
+    {
+        "name": "c3_SpeedSignal1_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal1_WireB"
+    },
+    {
+        "name": "c3_SpeedSignal2_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_Alm1"
+    },
+    {
+        "name": "c3_SpeedSignal2_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_Alm2"
+    },
+    {
+        "name": "c3_SpeedSignal2_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.SpeedSignal2_WireB"
+    },
+    {
+        "name": "c3_TrashRackWaterLevel_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_Alm1"
+    },
+    {
+        "name": "c3_TrashRackWaterLevel_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_Alm2"
+    },
+    {
+        "name": "c3_TrashRackWaterLevel_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TrashRackWaterLevel_WireB"
+    },
+    {
+        "name": "c3_UnitFlow_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_Alm1"
+    },
+    {
+        "name": "c3_UnitFlow_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_Alm2"
+    },
+    {
+        "name": "c3_UnitFlow_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitFlow_WireB"
+    },
+    {
+        "name": "c3_HpuPressure_Alm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_Alm1"
+    },
+    {
+        "name": "c3_HpuPressure_Alm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_Alm2"
+    },
+    {
+        "name": "c3_HpuPressure_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HpuPressure_WireB"
+    },
+    {
+        "name": "c3_TurbOilHeadTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_H"
+    },
+    {
+        "name": "c3_TurbOilHeadTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_HH"
+    },
+    {
+        "name": "c3_TurbOilHeadTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbOilHeadTemp_WireB"
+    },
+    {
+        "name": "c3_TurbGuideBrgTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_H"
+    },
+    {
+        "name": "c3_TurbGuideBrgTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_HH"
+    },
+    {
+        "name": "c3_TurbGuideBrgTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbGuideBrgTemp_WireB"
+    },
+    {
+        "name": "c3_TurbPackBoxTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_H"
+    },
+    {
+        "name": "c3_TurbPackBoxTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_HH"
+    },
+    {
+        "name": "c3_TurbPackBoxTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TurbPackBoxTemp_WireB"
+    },
+    {
+        "name": "c3_GenCoupEndGuideBrgTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_H"
+    },
+    {
+        "name": "c3_GenCoupEndGuideBrgTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_HH"
+    },
+    {
+        "name": "c3_GenCoupEndGuideBrgTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenCoupEndGuideBrgTemp_WireB"
+    },
+    {
+        "name": "c3_GenOutEndGuideBrgTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_H"
+    },
+    {
+        "name": "c3_GenOutEndGuideBrgTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_HH"
+    },
+    {
+        "name": "c3_GenOutEndGuideBrgTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenOutEndGuideBrgTemp_WireB"
+    },
+    {
+        "name": "c3_OutThrustBrgTemp_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_H"
+    },
+    {
+        "name": "c3_OutThrustBrgTemp_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_HH"
+    },
+    {
+        "name": "c3_OutThrustBrgTemp_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.OutThrustBrgTemp_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp1_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp1_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp1_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp1_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp2_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp2_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp2_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp2_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp3_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp3_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp3_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp3_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp4_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp4_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp4_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp4_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp5_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp5_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp5_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp5_WireB"
+    },
+    {
+        "name": "c3_GenStatWindTemp6_H"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_H"
+    },
+    {
+        "name": "c3_GenStatWindTemp6_HH"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_HH"
+    },
+    {
+        "name": "c3_GenStatWindTemp6_WireB"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.GenStatWindTemp6_WireB"
+    },
+    {
+        "name": "c3_Differential_Level_LimAlm1"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Differential_Level_LimAlm1"
+    },
+    {
+        "name": "c3_Differential_Level_LimAlm2"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Differential_Level_LimAlm2"
+    },
+    {
+        "name": "c3_EnabledUnit"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.EnabledUnit"
+    },
+    {
+        "name": "c3_CurrentLeadUnit"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrentLeadUnit"
+    },
+    {
+        "name": "c3_PLCWatchDogCircuitMalfunction"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PLCWatchDogCircuitMalfunction"
+    },
+    {
+        "name": "c3_ExcON"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcON"
+    },
+    {
+        "name": "c3_ExcOff"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.ExcOff"
+    },
+    {
+        "name": "c3_DownTimeDays"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeDays"
+    },
+    {
+        "name": "c3_DownTimeHours"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeHours"
+    },
+    {
+        "name": "c3_DownTimeSinceTripDays"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeSinceTripDays"
+    },
+    {
+        "name": "c3_DownTimeSinceTripHours"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.DownTimeSinceTripHours"
+    },
+    {
+        "name": "c3_TotalMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.TotalMWh"
+    },
+    {
+        "name": "c3_PrevYearMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevYearMWh"
+    },
+    {
+        "name": "c3_CurrYearMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrYearMWh"
+    },
+    {
+        "name": "c3_PrevMonthMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevMonthMWh"
+    },
+    {
+        "name": "c3_CurrMonthMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrMonthMWh"
+    },
+    {
+        "name": "c3_PrevDayMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PrevDayMWh"
+    },
+    {
+        "name": "c3_CurrDayMWh"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.CurrDayMWh"
+    },
+    {
+        "name": "c3_PowerFactor"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.PowerFactor"
+    },
+    {
+        "name": "c3_UnitStatus"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.UnitStatus"
+    },
+    {
+        "name": "c3_Step1Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step1Status"
+    },
+    {
+        "name": "c3_Step2Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step2Status"
+    },
+    {
+        "name": "c3_Step3Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step3Status"
+    },
+    {
+        "name": "c3_Step4Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step4Status"
+    },
+    {
+        "name": "c3_Step5Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step5Status"
+    },
+    {
+        "name": "c3_Step6Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step6Status"
+    },
+    {
+        "name": "c3_Step7Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step7Status"
+    },
+    {
+        "name": "c3_Step8Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step8Status"
+    },
+    {
+        "name": "c3_Step9Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step9Status"
+    },
+    {
+        "name": "c3_Step10Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step10Status"
+    },
+    {
+        "name": "c3_Step11Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step11Status"
+    },
+    {
+        "name": "c3_Step12Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step12Status"
+    },
+    {
+        "name": "c3_Step13Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step13Status"
+    },
+    {
+        "name": "c3_Step14Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step14Status"
+    },
+    {
+        "name": "c3_Step20Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step20Status"
+    },
+    {
+        "name": "c3_Step21Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step21Status"
+    },
+    {
+        "name": "c3_Step22Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step22Status"
+    },
+    {
+        "name": "c3_Step23Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step23Status"
+    },
+    {
+        "name": "c3_Step24Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step24Status"
+    },
+    {
+        "name": "c3_Step25Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step25Status"
+    },
+    {
+        "name": "c3_Step26Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step26Status"
+    },
+    {
+        "name": "c3_Step27Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step27Status"
+    },
+    {
+        "name": "c3_Step28Status"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.Step28Status"
+    },
+    {
+        "name": "c3_HWDiffProtDisabled"
+        ,"nodeID": "ns=4;s=|var|CODESYS Control Win V3 x64.Application.DB1.HWDiffProtDisabled"
+    }
