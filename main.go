@@ -179,16 +179,18 @@ func main() {
 	optsPub.DefaultPublishHandler = func(_ mqtt.Client, msg mqtt.Message) { fmt.Printf("PUB BROKER - UNEXPECTED : %s\n", msg) }
 
 	optsPub.OnConnectionLost = func(cl mqtt.Client, err error) {
-		fmt.Println("PUB BROKER - CONNECTION LOST")
+		fmt.Println(time.Now(), "PUB BROKER - CONNECTION LOST")
 		PubConnOk = false
 	}
 
 	optsPub.OnConnect = func(c mqtt.Client) {
-		fmt.Println("PUB BROKER - CONNECTION STABLISHED")
+		fmt.Println(time.Now(), "PUB BROKER - CONNECTION STABLISHED")
 		PubConnOk = true
 	}
 
-	optsPub.OnReconnecting = func(mqtt.Client, *mqtt.ClientOptions) { fmt.Println("PUB BROKER - ATTEMPTING TO RECONNECT") }
+	optsPub.OnReconnecting = func(mqtt.Client, *mqtt.ClientOptions) {
+		fmt.Println(time.Now(), "PUB BROKER - ATTEMPTING TO RECONNECT")
+	}
 
 	//connect to PUB broker
 	//
@@ -197,7 +199,7 @@ func main() {
 	if tokenPub := clientPub.Connect(); tokenPub.Wait() && tokenPub.Error() != nil {
 		panic(tokenPub.Error())
 	}
-	fmt.Println("PUB BROKER  - CONNECTION IS UP")
+	fmt.Println(time.Now(), "PUB BROKER  - CONNECTION IS UP")
 	////////////////////END OF MQTT CONFIGURATION SECTION////////////////////////////
 
 	ctx := context.Background()
@@ -207,12 +209,12 @@ func main() {
 		if err := c[i].Connect(ctx); err != nil {
 			fmt.Println(err)
 			connStatus[i] = false
-			fmt.Println(ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION NOT STABLISHED")
+			fmt.Println(time.Now(), ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION NOT STABLISHED")
 			continue
 		}
 		defer c[i].CloseWithContext(ctx)
 		connStatus[i] = true
-		fmt.Println(ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION STABLISHED")
+		fmt.Println(time.Now(), ConfigFile.OpcUaClients[i].ClientId, ConfigFile.OpcUaClients[i].ServerAddress, ":::OPC UA SERVER - CONNECTION STABLISHED")
 	}
 
 	for u := 0; u < len(ConfigFile.OpcUaClients); u++ {
@@ -220,14 +222,14 @@ func main() {
 			for {
 
 				if connStatus[u] == false {
-					fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - ATTEMPTING TO RECONNECT")
+					fmt.Println(time.Now(), ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - ATTEMPTING TO RECONNECT")
 					c[u] = opcua.NewClient(*endpoints[u], opcua.SecurityMode(ua.MessageSecurityModeNone), opcua.AutoReconnect(true), opcua.ReconnectInterval(time.Minute))
 					time.Sleep(time.Duration(5) * time.Second)
 					if err := c[u].Connect(ctx); err != nil {
 						fmt.Println(err)
 						continue
 					}
-					fmt.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - CONNECTION RESTABLISHED")
+					fmt.Println(time.Now(), ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::OPC UA SERVER - CONNECTION RESTABLISHED")
 					connStatus[u] = true
 					continue
 				}
@@ -241,7 +243,7 @@ func main() {
 
 					resp, err := c[u].ReadWithContext(ctx, req)
 					if err != nil {
-						fmt.Println("Read failed: %", err)
+						fmt.Println(time.Now(), "Read failed: %", err)
 						c[u].Close()
 						connStatus[u] = false
 						break
@@ -250,14 +252,14 @@ func main() {
 					for i := 0; i < len(resp.Results); i++ {
 
 						if resp.Results[i].Status != ua.StatusOK {
-							log.Println(ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::Status not OK:", resp.Results[i].Status)
+							log.Println(time.Now(), ConfigFile.OpcUaClients[u].ClientId, ConfigFile.OpcUaClients[u].ServerAddress, ":::Status not OK:", resp.Results[i].Status)
 							continue
 						}
 
 						x := resp.Results[i].Value.Value()
 						switch x.(type) {
 						case nil:
-							log.Println("node value is nil")
+							log.Println(time.Now(), "node value is nil")
 						case bool:
 							v = x.(bool)
 							//log.Println("node value (bool): ", v, ConfigFile.OpcUaClients[u].NodesToRead[ConfigFile.OpcUaClients[u].MaxSignalsPerRead*j+i].Name)
@@ -300,12 +302,12 @@ func main() {
 	signal.Notify(sig, syscall.SIGTERM)
 
 	<-sig
-	fmt.Println("signal caught - exiting")
+	fmt.Println(time.Now(), "signal caught - exiting")
 
 	for i := 0; i < len(ConfigFile.OpcUaClients); i++ {
 		c[i].Close()
 	}
 
 	clientPub.Disconnect(1000)
-	fmt.Println("shutdown complete")
+	fmt.Println(time.Now(), "shutdown complete")
 }
