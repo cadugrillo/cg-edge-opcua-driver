@@ -1180,7 +1180,7 @@
         {
             "clientId": "cg_opcua_client2",
             "serverAddress": "opc.tcp://172.24.50.11:4840",
-            "pollInterval": 1,
+            "pollInterval": 60,
             "maxAge": 2000,
             "maxSignalsPerRead": 100,
             "minTimeBetweenRead": 100,
@@ -2334,7 +2334,7 @@
         {
             "clientId": "cg_opcua_client3",
             "serverAddress": "opc.tcp://172.24.50.100:4840",
-            "pollInterval": 1,
+            "pollInterval": 60,
             "maxAge": 2000,
             "maxSignalsPerRead": 100,
             "minTimeBetweenRead": 100,
